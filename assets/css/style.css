@@ -426,77 +426,126 @@ main,
 /* ===========================
    EXPERIENCE
 =========================== */
-.exp-list {
+
+/* ===========================
+   EXPERIENCE — RESTORE OLD UI
+   (paste at END of CSS)
+=========================== */
+
+#experience .panel {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+#experience .exp-list {
   margin-top: 2.1rem;
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
 }
 
-.exp-card {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 1.2rem;
-  align-items: center;
-  padding: 1.3rem 1.5rem;
-  border-radius: 20px;
-  background: #ffffff;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
-  border: 1px solid rgba(249, 4, 77, 0.06);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+/* Old-style card: logo left, content right, compact */
+#experience .exp-card {
+  display: grid !important;
+  grid-template-columns: 90px 1fr !important;
+  gap: 1.25rem !important;
+  align-items: flex-start !important;
+
+  padding: 1.4rem 1.6rem !important;
+  border-radius: 20px !important;
+
+  background: #ffffff !important;
+  border: 1px solid rgba(249, 4, 77, 0.06) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07) !important;
+
+  max-width: 100% !important;
+  margin: 0 !important;
 }
 
-.exp-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.10);
+/* Logo box (left) */
+#experience .exp-logo {
+  width: 90px !important;
+  height: 90px !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  background: rgba(249, 4, 77, 0.06) !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-.exp-logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 18px;
-  overflow: hidden;
-  background: rgba(249, 4, 77, 0.06);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#experience .exp-logo img {
+  max-width: 80% !important;
+  height: auto !important;
+  display: block !important;
 }
 
-.exp-logo img {
-  max-width: 90%;
-  height: auto;
+/* Header row: role left, date pill right */
+#experience .exp-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem !important;
+  margin-bottom: 0.3rem !important;
 }
 
-.exp-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 0.75rem;
+#experience .exp-role {
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: #d82447 !important;
+  margin: 0 !important;
 }
 
-.exp-role {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #d82447;
+/* Date pill */
+#experience .exp-badge {
+  font-size: 0.82rem !important;
+  padding: 0.28rem 0.85rem !important;
+  border-radius: 999px !important;
+  background: rgba(249, 4, 77, 0.08) !important;
+  color: #7b3042 !important;
+  white-space: nowrap !important;
 }
 
-.exp-badge {
-  font-size: 0.8rem;
-  padding: 0.25rem 0.8rem;
-  border-radius: 999px;
-  background: rgba(249, 4, 77, 0.08);
-  color: #7b3042;
+/* Company + description */
+#experience .exp-company {
+  margin: 0.1rem 0 0.55rem !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  color: #5c1224 !important;
 }
 
-.exp-company {
-  font-size: 0.9rem;
-  margin: 0.2rem 0 0.4rem;
+#experience .exp-desc {
+  margin: 0 !important;
+  font-size: 0.92rem !important;
+  line-height: 1.65 !important;
+  color: rgba(92, 18, 36, 0.92) !important;
 }
 
-.exp-desc {
-  font-size: 0.9rem;
-  opacity: 0.95;
-  line-height: 1.6;
+/* Hover pop (like before) */
+#experience .exp-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+}
+
+#experience .exp-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.10) !important;
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 680px) {
+  #experience .exp-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  #experience .exp-logo {
+    width: 76px !important;
+    height: 76px !important;
+  }
+
+  #experience .exp-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
 }
 
 /* ===========================
@@ -944,3 +993,4 @@ main,
     grid-template-columns: 1fr;
   }
 }
+
