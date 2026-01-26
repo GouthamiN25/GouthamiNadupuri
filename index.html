@@ -1,6 +1,3 @@
-<!-- =========================
-     index.html (COMPLETE)
-========================= -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,7 +44,9 @@
 
     <main>
       <!-- ================= HERO ================= -->
-      <section id="welcome-hero" class="hero">
+      <section id="welcome-hero" class="hero hero-ggb">
+        <div class="hero-overlay"></div>
+
         <div class="hero-inner">
           <p class="hero-eyebrow">WELCOME TO MY DIGITAL UNIVERSE</p>
           <h1 class="hero-title">Gouthami Nadupuri</h1>
@@ -131,7 +130,6 @@
             </div>
 
             <div class="about-image">
-              <!-- keep your image here -->
               <img
                 src="assets/images/about/p_img.jpg"
                 alt="Gouthami Nadupuri"
@@ -149,14 +147,14 @@
             <h2>Education</h2>
           </header>
 
-          <!-- ✅ side-by-side on desktop -->
+          <!-- ✅ side-by-side -->
           <div class="edu-grid">
             <article class="edu-card">
               <div class="edu-main">
                 <h3>Master of Science in Data Science</h3>
                 <p class="edu-inst">University of the Pacific · San Francisco, USA</p>
                 <p class="edu-desc">
-                  Python, R, SQL, Data Wrangling, Machine Learning, NLP, Data Engineering,
+                  Python, SQL, Data Wrangling, Machine Learning, NLP, Data Engineering,
                   Statistics, Data Visualization.
                 </p>
               </div>
@@ -178,14 +176,13 @@
         </div>
       </section>
 
-      <!-- ================= EXPERIENCE ================= -->
+      <!-- ================= EXPERIENCE (TIMELINE) ================= -->
       <section id="experience" class="section">
         <div class="panel">
           <header class="panel-header text-center">
             <h2>Experience</h2>
           </header>
 
-          <!-- ✅ timeline layout like your sketch: line center + alternating cards -->
           <div class="timeline">
             <!-- 1 -->
             <div class="tl-item left">
@@ -261,9 +258,13 @@
         <div class="panel">
           <header class="panel-header text-center">
             <h2>Projects</h2>
+            <p class="panel-subtitle">
+              Selected projects from GitHub. (You can add more cards anytime.)
+            </p>
           </header>
 
           <div class="projects-grid">
+            <!-- Keep your 3 featured first -->
             <article class="project-card">
               <img src="assets/images/projects/tim.jpg" alt="Time Series" class="project-image" />
               <div class="project-body">
@@ -316,6 +317,81 @@
                 >
               </div>
             </article>
+
+            <!-- More GitHub repos (cards) -->
+            <article class="project-card">
+              <div class="project-body">
+                <h3>GOVISHA</h3>
+                <p class="project-desc">AI + fashion + TypeScript project.</p>
+                <p class="project-tech"><strong>Tech:</strong> TypeScript</p>
+                <a href="https://github.com/GouthamiN25/GOVISHA" class="project-link" target="_blank">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-body">
+                <h3>CurioGalaxy.com</h3>
+                <p class="project-desc">Your CurioGalaxy platform repository.</p>
+                <p class="project-tech"><strong>Tech:</strong> TypeScript</p>
+                <a href="https://github.com/GouthamiN25/CurioGalaxy.com" class="project-link" target="_blank">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-body">
+                <h3>Deep Q-Learning Agent for CartPole</h3>
+                <p class="project-desc">Reinforcement learning DQN agent with training workflow.</p>
+                <p class="project-tech"><strong>Tech:</strong> Python, RL</p>
+                <a href="https://github.com/GouthamiN25/Deep-Q-Learning-Agent-for-CartPole" class="project-link" target="_blank">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-body">
+                <h3>Heart Disease Prediction</h3>
+                <p class="project-desc">ML classification for heart risk prediction.</p>
+                <p class="project-tech"><strong>Tech:</strong> Python, scikit-learn</p>
+                <a href="https://github.com/GouthamiN25/Heart-Disease-Prediction" class="project-link" target="_blank">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-body">
+                <h3>Fake News Analysis</h3>
+                <p class="project-desc">NLP classification pipeline for fake/real news.</p>
+                <p class="project-tech"><strong>Tech:</strong> Python, NLP</p>
+                <a href="https://github.com/GouthamiN25/Fake-News-Analysis" class="project-link" target="_blank">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-body">
+                <h3>E-commerce Fraud Detection</h3>
+                <p class="project-desc">Fraud detection pipeline for transactions.</p>
+                <p class="project-tech"><strong>Tech:</strong> Python</p>
+                <a href="https://github.com/GouthamiN25/E-commerce-Fraud-Detection" class="project-link" target="_blank">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-body">
+                <h3>Mortgage Analysis</h3>
+                <p class="project-desc">Consumer mortgage complaint trend analysis.</p>
+                <p class="project-tech"><strong>Tech:</strong> Python</p>
+                <a href="https://github.com/GouthamiN25/Mortgage-Analysis" class="project-link" target="_blank">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-body">
+                <h3>Customer Churn Prediction</h3>
+                <p class="project-desc">Supervised model to predict churn and key drivers.</p>
+                <p class="project-tech"><strong>Tech:</strong> Python</p>
+                <a href="https://github.com/GouthamiN25/Customer-Churn-Prediction" class="project-link" target="_blank">View Project</a>
+              </div>
+            </article>
+
+            <!-- Add more cards from your GitHub list anytime -->
           </div>
         </div>
       </section>
@@ -326,15 +402,16 @@
           <header class="panel-header text-center">
             <h2>Courses & Certifications</h2>
             <p class="panel-subtitle">
-              Verified learning across Google Cloud, GenAI/LLMs, and core programming.
+              Google Cloud · GenAI/LLMs · Data & ML fundamentals
             </p>
           </header>
 
           <div class="courses-grid">
+            <!-- Keep the ones you already had -->
             <article class="course-card">
               <h3>Build, Train and Deploy ML Models with Keras on Google Cloud</h3>
               <p class="course-meta">
-                Google Cloud Security · Issued Nov 2025 · Credential ID: 1ZWI23YHA5DE
+                Google · Issued Nov 2025 · Credential ID: 1ZWI23YHA5DE
               </p>
             </article>
 
@@ -344,6 +421,52 @@
                 IBM · Issued Sep 2025 · Credential ID: TLSS7BYRYI9D
               </p>
             </article>
+
+            <article class="course-card">
+              <h3>Data Analytics in Google Cloud</h3>
+              <p class="course-meta">Google · Issued Jun 2024</p>
+            </article>
+
+            <article class="course-card">
+              <h3>Website on Google Cloud</h3>
+              <p class="course-meta">Google · Issued Jun 2024</p>
+            </article>
+
+            <article class="course-card">
+              <h3>Building No-Code Apps with AppSheet: Foundations</h3>
+              <p class="course-meta">Google · Issued May 2024 · Credential ID: 9151753</p>
+            </article>
+
+            <article class="course-card">
+              <h3>Introduction to Generative AI</h3>
+              <p class="course-meta">Google · Issued May 2024</p>
+            </article>
+
+            <article class="course-card">
+              <h3>Introduction to Large Language Models</h3>
+              <p class="course-meta">Google · Issued May 2024 · Credential ID: 9071711</p>
+            </article>
+
+            <article class="course-card">
+              <h3>Introduction to Prompt Engineering for Generative AI</h3>
+              <p class="course-meta">LinkedIn · Issued May 2024</p>
+            </article>
+
+            <article class="course-card">
+              <h3>Data Structures and Algorithms</h3>
+              <p class="course-meta">
+                Udemy · Issued May 2022 · Credential ID: UC-76db67ee-3429-4283-8660-766fdd6ddf6e
+              </p>
+            </article>
+
+            <article class="course-card">
+              <h3>Python Programming Masterclass</h3>
+              <p class="course-meta">
+                Udemy · Issued Jan 2022 · Credential ID: UC-2ca670af-01fa-45f9-9347-1dd822f00125
+              </p>
+            </article>
+
+            <!-- ✅ Add your LinkedIn certifications here (paste more <article class="course-card">...) -->
           </div>
         </div>
       </section>
@@ -367,137 +490,187 @@
         </div>
       </section>
 
-      <!-- ================= SKILLS ================= -->
-<section id="skills" class="section">
-  <div class="panel">
-    <header class="panel-header text-center">
-      <h2>Skills</h2>
-    </header>
+      <!-- ================= SKILLS (FULL + UPDATED) ================= -->
+      <section id="skills" class="section">
+        <div class="panel">
+          <header class="panel-header text-center">
+            <h2>Skills</h2>
+            <p class="panel-subtitle">
+              AI/ML · Data · Backend · Frontend · Cloud · Tools
+            </p>
+          </header>
 
-    <div class="skills-grid">
-      <!-- Web -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-        <span>HTML5</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-        <span>CSS3</span>
-      </div>
-         <div class="skill-item">
-     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-  <span>Java</span>
-</div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-        <span>JavaScript</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
-        <span>TypeScript</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-        <span>Node.js</span>
-      </div>
+          <!-- Category chips -->
+          <div class="skill-groups">
+            <div class="skill-group">
+              <h3>AI & Machine Learning</h3>
+              <div class="chip-row">
+                <span class="chip">Machine Learning</span>
+                <span class="chip">Deep Learning</span>
+                <span class="chip">TensorFlow</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">LLMs</span>
+                <span class="chip">RAG</span>
+                <span class="chip">NLP</span>
+                <span class="chip">Reinforcement Learning</span>
+                <span class="chip">Scikit-learn</span>
+              </div>
+            </div>
 
-      <!-- Core -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-        <span>Python</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" />
-        <span>R</span>
-      </div>
+            <div class="skill-group">
+              <h3>Programming</h3>
+              <div class="chip-row">
+                <span class="chip">Python</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Java</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">JavaScript</span>
+              </div>
+            </div>
 
-      <!-- Databases -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
-        <span>PostgreSQL</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-        <span>MySQL</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" />
-        <span>SQLite</span>
-      </div>
+            <div class="skill-group">
+              <h3>Frameworks / Libraries</h3>
+              <div class="chip-row">
+                <span class="chip">Spring Boot</span>
+                <span class="chip">Apache Spark</span>
+                <span class="chip">PySpark</span>
+                <span class="chip">NumPy</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">SciPy</span>
+                <span class="chip">Matplotlib</span>
+              </div>
+            </div>
 
-      <!-- Data / DS -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" />
-        <span>NumPy</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" />
-        <span>Pandas</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg" alt="SciPy" />
-        <span>SciPy</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" />
-        <span>Matplotlib</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" />
-        <span>Scikit-learn</span>
-      </div>
+            <div class="skill-group">
+              <h3>Backend & APIs</h3>
+              <div class="chip-row">
+                <span class="chip">FastAPI</span>
+                <span class="chip">Flask</span>
+                <span class="chip">REST APIs</span>
+                <span class="chip">JSON</span>
+                <span class="chip">API Integration</span>
+              </div>
+            </div>
 
-      <!-- Deep Learning -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
-        <span>TensorFlow</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />
-        <span>PyTorch</span>
-      </div>
+            <div class="skill-group">
+              <h3>Frontend</h3>
+              <div class="chip-row">
+                <span class="chip">React</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3</span>
+              </div>
+            </div>
 
-      <!-- Backend -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
-        <span>FastAPI</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
-        <span>Flask</span>
-      </div>
+            <div class="skill-group">
+              <h3>Data & Platforms</h3>
+              <div class="chip-row">
+                <span class="chip">ETL Pipelines</span>
+                <span class="chip">Data Wrangling</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">SQLite</span>
+                <span class="chip">Docker</span>
+                <span class="chip">Vector AI</span>
+              </div>
+            </div>
 
-      <!-- Cloud / Tools -->
-      <div class="skill-item">
-        <img src="https://img.icons8.com/color/96/amazon-web-services.png" alt="AWS" />
-        <span>AWS</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" />
-        <span>GCP</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-        <span>GitHub</span>
-      </div>
+            <div class="skill-group">
+              <h3>Cloud / Tools</h3>
+              <div class="chip-row">
+                <span class="chip">AWS</span>
+                <span class="chip">GCP</span>
+                <span class="chip">Vertex AI</span>
+                <span class="chip">GitHub</span>
+                <span class="chip">Jira</span>
+                <span class="chip">Postman</span>
+                <span class="chip">Confluence</span>
+                <span class="chip">Agile</span>
+              </div>
+            </div>
+          </div>
 
-      <!-- Practices / Concepts (no logos: text-only chips) -->
-      <div class="skill-item skill-text">
-        <span>Data Wrangling</span>
-      </div>
-      <div class="skill-item skill-text">
-        <span>ETL Pipeline</span>
-      </div>
-      <div class="skill-item skill-text">
-        <span>Agile</span>
-      </div>
-      <div class="skill-item skill-text">
-        <span>Vector AI</span>
-      </div>
-    </div>
-  </div>
-</section>
+          <!-- Icon grid (kept + clean) -->
+          <div class="skills-grid">
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+              <span>Java</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+              <span>React</span>
+            </div>
 
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" />
+              <span>SQLite</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
+              <span>TensorFlow</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />
+              <span>PyTorch</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" />
+              <span>Scikit-learn</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
+              <span>FastAPI</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
+              <span>Flask</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+              <span>Docker</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/96/amazon-web-services.png" alt="AWS" />
+              <span>AWS</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" />
+              <span>GCP</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- ================= CONTACT ================= -->
       <section id="contact" class="section">
@@ -600,5 +773,3 @@
     </script>
   </body>
 </html>
-
-
