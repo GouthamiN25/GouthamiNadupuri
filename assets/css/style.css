@@ -169,6 +169,45 @@ main,
 }
 
 /* ===========================
+   HERO — Golden Gate BG + Pink text
+=========================== */
+
+#welcome-hero.hero {
+  position: relative;
+  background: url("../images/hero/golden-gate-bg.png") center/cover no-repeat;
+}
+
+/* soft overlay so text is readable */
+#welcome-hero.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 235, 242, 0.78);
+  backdrop-filter: blur(1px);
+  z-index: 0;
+}
+
+#welcome-hero .hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero text colors */
+.hero-eyebrow {
+  color: #d82447 !important;
+  font-weight: 600;
+}
+
+.hero-title {
+  color: #d82447 !important;
+}
+
+.hero-subtitle {
+  color: rgba(216, 36, 71, 0.85) !important;
+  font-weight: 500;
+}
+
+/* ===========================
    HERO (stable layout)
    ✅ left text, right photo
 =========================== */
@@ -374,12 +413,13 @@ main,
 =========================== */
 .edu-list {
   margin-top: 2.1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
 }
 
 .edu-card {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -397,30 +437,10 @@ main,
   box-shadow: 0 18px 38px rgba(0, 0, 0, 0.10);
 }
 
-.edu-main h3 {
-  margin: 0 0 0.35rem;
-  font-size: 1.05rem;
-}
-
-.edu-inst {
-  margin: 0;
-  font-size: 0.9rem;
-  opacity: 0.92;
-}
-
-.edu-desc {
-  margin-top: 0.4rem;
-  font-size: 0.88rem;
-  opacity: 0.9;
-}
-
-.edu-pill {
-  font-size: 0.8rem;
-  padding: 0.3rem 0.8rem;
-  border-radius: 999px;
-  background: rgba(249, 4, 77, 0.08);
-  color: #7b3042;
-  white-space: nowrap;
+@media (max-width: 900px) {
+  .edu-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===========================
@@ -993,4 +1013,5 @@ main,
     grid-template-columns: 1fr;
   }
 }
+
 
