@@ -130,7 +130,7 @@ body::after{
 
 /* ✅ Golden Gate background */
 .hero-ggb{
-  background-image: url("assets/images/about/golden-gate-bg.png");
+  background-image: url("GouthamiNadupuri/assets/images/about/golden-gate-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -705,5 +705,6 @@ body::after{
   .hero-title{ font-size: 2.8rem; }
   .form-row{ flex-direction: column; }
 }
+
 
 
