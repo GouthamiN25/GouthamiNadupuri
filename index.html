@@ -44,32 +44,44 @@
 
     <main>
       <!-- ================= HERO ================= -->
-      <section id="welcome-hero" class="hero hero-ggb">
-        <div class="hero-overlay"></div>
+<section id="welcome-hero" class="hero hero-ggb">
+  <div class="hero-overlay"></div>
 
-        <div class="hero-inner">
-          <p class="hero-eyebrow">WELCOME TO MY DIGITAL UNIVERSE</p>
-          <h1 class="hero-title">Gouthami Nadupuri</h1>
-          <p class="hero-subtitle">Data Scientist · AI/ML Engineer</p>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">WELCOME TO MY DIGITAL UNIVERSE</p>
+    <h1 class="hero-title">Gouthami Nadupuri</h1>
+    <p class="hero-subtitle">Data Scientist · AI/ML Engineer</p>
 
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-ghost">Contact Me</a>
-            <a
-              href="assets/download/Resume-GouthamiN-AI.pdf"
-              target="_blank"
-              class="btn btn-ghost"
-              >Resume</a
-            >
-          </div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">
+        <i class="fa-solid fa-briefcase"></i>
+        View My Work
+      </a>
 
-          <div class="hero-scroll">
-            <a href="#about" aria-label="Scroll to About">
-              <i class="fa-solid fa-chevron-down"></i>
-            </a>
-          </div>
-        </div>
-      </section>
+      <a href="#contact" class="btn btn-outline">
+        <i class="fa-regular fa-envelope"></i>
+        Contact Me
+      </a>
+
+      <a
+        href="assets/download/Resume-GouthamiN-AI.pdf"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+      >
+        <i class="fa-regular fa-file-lines"></i>
+        Resume
+      </a>
+    </div>
+
+    <div class="hero-scroll">
+      <p class="hero-scroll-text">SCROLL TO ABOUT</p>
+      <a href="#about" aria-label="Scroll to About" class="hero-scroll-btn">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+  </div>
+</section>
 
       <!-- ================= ABOUT ================= -->
       <section id="about" class="section">
@@ -472,107 +484,141 @@
         </div>
       </section>
 
-      <!-- ================= SKILLS (FULL + UPDATED) ================= -->
-      <section id="skills" class="section">
-        <div class="panel">
-          <header class="panel-header text-center">
-            <h2>Skills</h2>
-            <p class="panel-subtitle">
-              AI/ML · Data · Backend · Frontend · Cloud · Tools
-            </p>
-          </header>
+      <!-- ================= SKILLS ================= -->
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="skills-head">
+      <h2 class="skills-title">Skills</h2>
+      <p class="skills-subtitle">Technical expertise across the data science stack</p>
+    </div>
 
-          <!-- Category chips -->
-          <div class="skill-groups">
-            <div class="skill-group">
-              <h3>AI & Machine Learning</h3>
-              <div class="chip-row">
-                <span class="chip">Machine Learning</span>
-                <span class="chip">Deep Learning</span>
-                <span class="chip">TensorFlow</span>
-                <span class="chip">PyTorch</span>
-                <span class="chip">LLMs</span>
-                <span class="chip">RAG</span>
-                <span class="chip">NLP</span>
-                <span class="chip">Reinforcement Learning</span>
-                <span class="chip">Scikit-learn</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Programming</h3>
-              <div class="chip-row">
-                <span class="chip">Python</span>
-                <span class="chip">SQL</span>
-                <span class="chip">Java</span>
-                <span class="chip">TypeScript</span>
-                <span class="chip">JavaScript</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Frameworks / Libraries</h3>
-              <div class="chip-row">
-                <span class="chip">Spring Boot</span>
-                <span class="chip">Apache Spark</span>
-                <span class="chip">PySpark</span>
-                <span class="chip">NumPy</span>
-                <span class="chip">Pandas</span>
-                <span class="chip">SciPy</span>
-                <span class="chip">Matplotlib</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Backend & APIs</h3>
-              <div class="chip-row">
-                <span class="chip">FastAPI</span>
-                <span class="chip">Flask</span>
-                <span class="chip">REST APIs</span>
-                <span class="chip">JSON</span>
-                <span class="chip">API Integration</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Frontend</h3>
-              <div class="chip-row">
-                <span class="chip">React</span>
-                <span class="chip">Node.js</span>
-                <span class="chip">HTML5</span>
-                <span class="chip">CSS3</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Data & Platforms</h3>
-              <div class="chip-row">
-                <span class="chip">ETL Pipelines</span>
-                <span class="chip">Data Wrangling</span>
-                <span class="chip">PostgreSQL</span>
-                <span class="chip">MySQL</span>
-                <span class="chip">SQLite</span>
-                <span class="chip">Docker</span>
-                <span class="chip">Vector AI</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <h3>Cloud / Tools</h3>
-              <div class="chip-row">
-                <span class="chip">AWS</span>
-                <span class="chip">GCP</span>
-                <span class="chip">Vertex AI</span>
-                <span class="chip">GitHub</span>
-                <span class="chip">Jira</span>
-                <span class="chip">Postman</span>
-                <span class="chip">Confluence</span>
-                <span class="chip">Agile</span>
-              </div>
-            </div>
+    <div class="skills-grid-v2">
+      <!-- 1 -->
+      <article class="skill-card-v2">
+        <div class="skill-card-head">
+          <div class="skill-ico">
+            <i class="fa-solid fa-brain"></i>
           </div>
+          <h3>AI &amp; Machine Learning</h3>
+        </div>
+        <div class="chips-v2">
+          <span class="chip-v2">Machine Learning</span>
+          <span class="chip-v2">Deep Learning</span>
+          <span class="chip-v2">TensorFlow</span>
+          <span class="chip-v2">PyTorch</span>
+          <span class="chip-v2">LLMs</span>
+          <span class="chip-v2">RAG</span>
+          <span class="chip-v2">NLP</span>
+          <span class="chip-v2">Reinforcement Learning</span>
+          <span class="chip-v2">Scikit-learn</span>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="skill-card-v2">
+        <div class="skill-card-head">
+          <div class="skill-ico">
+            <i class="fa-solid fa-code"></i>
           </div>
-      </section>
+          <h3>Programming</h3>
+        </div>
+        <div class="chips-v2">
+          <span class="chip-v2">Python</span>
+          <span class="chip-v2">SQL</span>
+          <span class="chip-v2">Java</span>
+          <span class="chip-v2">TypeScript</span>
+          <span class="chip-v2">JavaScript</span>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="skill-card-v2">
+        <div class="skill-card-head">
+          <div class="skill-ico">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3>Frameworks / Libraries</h3>
+        </div>
+        <div class="chips-v2">
+          <span class="chip-v2">Spring Boot</span>
+          <span class="chip-v2">Apache Spark</span>
+          <span class="chip-v2">PySpark</span>
+          <span class="chip-v2">NumPy</span>
+          <span class="chip-v2">Pandas</span>
+          <span class="chip-v2">SciPy</span>
+          <span class="chip-v2">Matplotlib</span>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="skill-card-v2">
+        <div class="skill-card-head">
+          <div class="skill-ico">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h3>Backend &amp; APIs</h3>
+        </div>
+        <div class="chips-v2">
+          <span class="chip-v2">FastAPI</span>
+          <span class="chip-v2">Flask</span>
+          <span class="chip-v2">REST APIs</span>
+          <span class="chip-v2">JSON</span>
+          <span class="chip-v2">API Integration</span>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="skill-card-v2">
+        <div class="skill-card-head">
+          <div class="skill-ico">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <h3>Frontend</h3>
+        </div>
+        <div class="chips-v2">
+          <span class="chip-v2">React</span>
+          <span class="chip-v2">Node.js</span>
+          <span class="chip-v2">HTML5</span>
+          <span class="chip-v2">CSS3</span>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="skill-card-v2">
+        <div class="skill-card-head">
+          <div class="skill-ico">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3>Data &amp; Platforms</h3>
+        </div>
+        <div class="chips-v2">
+          <span class="chip-v2">ETL Pipelines</span>
+          <span class="chip-v2">Data Wrangling</span>
+          <span class="chip-v2">PostgreSQL</span>
+          <span class="chip-v2">MySQL</span>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="skill-card-v2">
+        <div class="skill-card-head">
+          <div class="skill-ico">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+          <h3>Cloud / Tools</h3>
+        </div>
+        <div class="chips-v2">
+          <span class="chip-v2">AWS</span>
+          <span class="chip-v2">GCP</span>
+          <span class="chip-v2">Vertex AI</span>
+          <span class="chip-v2">GitHub</span>
+          <span class="chip-v2">Jira</span>
+          <span class="chip-v2">Postman</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
       <!-- ================= CONTACT ================= -->
       <section id="contact" class="section">
@@ -675,4 +721,5 @@
     </script>
   </body>
 </html>
+
 
