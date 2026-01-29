@@ -143,7 +143,7 @@ body::after{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.22; /* make image light like screenshot */
+  opacity: 0.22; 
   filter: saturate(0.9) brightness(1.25) contrast(0.9);
   transform: scale(1.02);
   z-index: 0;
@@ -755,4 +755,5 @@ body::after{
   .panel{ border-radius: 24px; padding: 2.2rem 1.4rem 2.5rem; }
   .form-row{ flex-direction: column; }
 }
+
 
