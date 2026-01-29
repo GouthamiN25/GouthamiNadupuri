@@ -756,4 +756,70 @@ body::after{
   .form-row{ flex-direction: column; }
 }
 
+/* =====================================================
+   FINAL HERO — GOLDEN GATE BRIDGE BACKGROUND (CLEAN)
+===================================================== */
 
+.hero.hero-ggb {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  /* fallback gradient */
+  background: linear-gradient(
+    180deg,
+    #f6c5d0 0%,
+    #f7d4dc 35%,
+    #fff6f8 100%
+  );
+}
+
+/* Golden Gate Bridge image layer */
+.hero.hero-ggb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("../images/about/golden-gate-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.28;
+  filter: brightness(1.25) saturate(0.9);
+  z-index: 0;
+}
+
+/* Soft white + pink haze (like reference image) */
+.hero.hero-ggb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      60% 45% at 50% 38%,
+      rgba(255,255,255,0.75) 0%,
+      rgba(255,255,255,0) 70%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(246,197,208,0.35) 0%,
+      rgba(255,255,255,0.85) 70%,
+      rgba(255,255,255,1) 100%
+    );
+  z-index: 1;
+}
+
+/* Disable old overlay div */
+.hero-ggb .hero-overlay {
+  display: none;
+}
+
+/* Content stays on top */
+.hero-inner {
+  position: relative;
+  z-index: 2;
+}
