@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Playfair Display", serif;
 
   background: linear-gradient(180deg,#ffe6ef 0%,#ffeaf2 35%,#fff1f6 70%,#fff6f9 100%);
   color: var(--text);
@@ -31,6 +31,11 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+html { letter-spacing: 0.1px; }
 
 a { text-decoration: none; color: inherit; }
 .text-center { text-align: center; }
@@ -937,3 +942,4 @@ body::after{
   .skills-grid-v2 { grid-template-columns: 1fr; }
   .skills-title { font-size: 44px; }
 }
+
