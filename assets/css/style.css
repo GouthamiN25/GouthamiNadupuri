@@ -823,3 +823,28 @@ body::after{
   position: relative;
   z-index: 2;
 }
+
+/* ================= HEADING COLOR (GLOBAL) =================
+   Forces the same red tone for all headings across the site
+   (matches your icon red: #f9044d)
+=========================================================== */
+
+:root{
+  --heading-red: var(--pink);
+}
+
+/* Global headings */
+h1, h2, h3, h4, h5, h6{
+  color: var(--heading-red) !important;
+}
+
+/* Your specific heading classes (extra-safe overrides) */
+.hero-title,
+.panel-header h2,
+.skills-title,
+.tl-role,
+.project-body h3,
+.course-card h3,
+.volunteer-card h3{
+  color: var(--heading-red) !important;
+}
