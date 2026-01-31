@@ -734,8 +734,45 @@
           });
       });
     </script>
+    
+    <script>
+  // ----- THEME TOGGLE (Light/Dark) -----
+  (function () {
+    const btn = document.getElementById("themeToggle");
+    if (!btn) return;
+
+    const icon = btn.querySelector("i");
+    const STORAGE_KEY = "gn-theme";
+
+    function setTheme(theme) {
+      document.body.setAttribute("data-theme", theme);
+      const isDark = theme === "dark";
+      btn.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+      btn.setAttribute("title", isDark ? "Light mode" : "Dark mode");
+      if (icon) icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
+    }
+
+    // 1) Load saved theme or system preference
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved === "dark" || saved === "light") {
+      setTheme(saved);
+    } else {
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setTheme(prefersDark ? "dark" : "light");
+    }
+
+    // 2) Toggle on click
+    btn.addEventListener("click", () => {
+      const current = document.body.getAttribute("data-theme") || "light";
+      const next = current === "dark" ? "light" : "dark";
+      setTheme(next);
+      localStorage.setItem(STORAGE_KEY, next);
+    });
+  })();
+</script>
   </body>
 </html>
+
 
 
 
