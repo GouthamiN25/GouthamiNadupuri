@@ -182,7 +182,7 @@ body::after{
   content:"";
   position:absolute;
   inset:0;
-  background-image: url("assets/images/about/golden-gate-bg.png");
+  background-image: url("../images/about/golden-gate-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -927,6 +927,7 @@ body[data-theme="dark"] .site-footer{
 body[data-theme="dark"] .social-bubble{
   box-shadow: 0 18px 45px rgba(249, 4, 77, 0.40);
 }
+
 
 
 
