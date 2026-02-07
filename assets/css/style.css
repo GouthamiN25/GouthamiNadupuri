@@ -569,84 +569,73 @@ body::after{
 .project-link:hover{ background:#ffe3eb; }
 
 /* ===============================
-   Projects: "More Projects" CTA
+   Projects: Centered "More Projects" Card
 ================================= */
 
 .project-card.project-more{
-  grid-column: 1 / -1;           /* ✅ spans full row */
+  grid-column: 1 / -1;            /* full row */
   padding: 0;
   overflow: hidden;
-  border: 2px dashed rgba(249, 4, 77, 0.35);
-  background: rgba(255, 255, 255, 0.75);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(249, 4, 77, 0.14);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.06);
 }
 
 body[data-theme="dark"] .project-card.project-more{
-  background: rgba(20, 20, 28, 0.65);
-  border-color: rgba(249, 4, 77, 0.35);
+  background: rgba(22, 22, 30, 0.72);
+  border-color: rgba(249, 4, 77, 0.18);
 }
 
 .project-more-link{
-  display: block;
-  padding: 22px 18px;
+  min-height: 260px;              /* gives that tall clean card look */
+  display: grid;
+  place-items: center;            /* perfect center alignment */
+  gap: 14px;
+  padding: 28px 18px;
   text-decoration: none;
+  position: relative;
 }
 
-.project-more-top{
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 12px;
-}
-
-.project-more-line{
-  flex: 1;
-  height: 1px;
-  background: rgba(249, 4, 77, 0.28);
-}
-
-.project-more-text{
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  letter-spacing: 0.4px;
+.project-more-title{
+  font-size: clamp(26px, 3.2vw, 44px);
+  font-weight: 900;
+  line-height: 1.05;
+  text-align: center;
   color: var(--heading-red);
-  text-transform: uppercase;
-  font-size: 14px;
+  letter-spacing: 0.2px;
 }
 
-.project-more-bottom{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  color: rgba(92, 18, 36, 0.9);
-  font-weight: 600;
-}
-
-body[data-theme="dark"] .project-more-bottom{
-  color: rgba(255, 255, 255, 0.86);
+.project-more-icon{
+  font-size: 34px;
+  color: var(--heading-red);
+  opacity: 0.92;
 }
 
 .project-more-arrow{
-  width: 34px;
-  height: 34px;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
   border-radius: 999px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(249, 4, 77, 0.35);
   color: var(--heading-red);
+  border: 1px solid rgba(249, 4, 77, 0.28);
+  background: rgba(249, 4, 77, 0.06);
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.project-more-hint{
-  font-size: 14px;
-  opacity: 0.95;
+.project-card.project-more:hover .project-more-arrow{
+  transform: translateY(-50%) translateX(4px);
+  background: rgba(249, 4, 77, 0.12);
 }
 
-.project-card.project-more:hover .project-more-arrow{
-  transform: translateX(3px);
-  background: rgba(249, 4, 77, 0.08);
+/* Optional: subtle hover lift */
+.project-card.project-more:hover{
+  transform: translateY(-3px);
 }
 
 /* -------------------- COURSES -------------------- */
@@ -1008,6 +997,7 @@ body[data-theme="dark"] .site-footer{
 body[data-theme="dark"] .social-bubble{
   box-shadow: 0 18px 45px rgba(249, 4, 77, 0.40);
 }
+
 
 
 
