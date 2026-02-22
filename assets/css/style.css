@@ -669,6 +669,11 @@ body[data-theme="dark"] .project-card.project-more-inline{
   font-size: 16px;
 }
 
+body[data-theme="dark"] .projects-subhead{
+  background: rgba(249, 4, 77, 0.12);
+  border-color: rgba(249, 4, 77, 0.22);
+}
+
 /* -------------------- COURSES -------------------- */
 .courses-grid{
   margin-top: 2.2rem;
@@ -1028,6 +1033,7 @@ body[data-theme="dark"] .site-footer{
 body[data-theme="dark"] .social-bubble{
   box-shadow: 0 18px 45px rgba(249, 4, 77, 0.40);
 }
+
 
 
 
