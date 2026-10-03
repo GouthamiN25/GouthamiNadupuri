@@ -1,730 +1,2322 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Gouthami Nadupuri – Data &amp; AI Engineer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Google Font (NEW) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-      />
+<head>
+  <meta charset="utf-8" />
+  <title>Gouthami Nadupuri – Data &amp; AI Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Google Font (NEW) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <meta name="description" content="Gouthami Nadupuri, Data &amp; AI Engineer specializing in Snowflake, ClickHouse, data platforms, cost intelligence, and applied AI." />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <meta name="description"
+    content="Gouthami Nadupuri, Data &amp; AI Engineer specializing in Snowflake, ClickHouse, data platforms, cost intelligence, and applied AI." />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
   <!-- Keep update styles with this HTML so publishing index.html includes them. -->
   <style id="portfolio-update-styles">
-.company-initials{display:grid;place-items:center;width:100%;height:100%;min-height:48px;font-weight:700;color:var(--text,#25334a)}
-.project-placeholder{display:grid;place-items:center;background:linear-gradient(135deg,#dce9f4,#ebe5f5);font-size:52px;color:#465d80}
-.tl-desc{padding-left:18px}.tl-desc li+li{margin-top:10px}
-[hidden]{display:none!important}
-.mobile-menu-toggle{display:none}
-a:focus-visible,button:focus-visible{outline:3px solid #5485d6;outline-offset:4px}
-@media(max-width:780px){
-.mobile-menu-toggle{display:block;background:transparent;color:inherit;border:1px solid currentColor;border-radius:8px;padding:8px 12px;cursor:pointer}
-.nav-links.is-open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:16px 24px;background:#fff;box-shadow:0 8px 15px #0002;max-height:75vh;overflow:auto}
-body[data-theme="dark"] .nav-links.is-open{background:#111827}
-.nav-links.is-open a{padding:8px 0}
-.tl-top,.tl-content{min-width:0}.tl-pill{white-space:normal}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-.edu-card+.edu-card{margin-top:20px}
-@media(max-width:640px){.edu-card{flex-direction:column;padding:20px}.edu-logo-inline{position:static}.edu-pill{white-space:normal}.projects-grid{grid-template-columns:minmax(0,1fr)}.tl-card{grid-template-columns:minmax(0,1fr)}.tl-logo{width:56px;height:56px}}
+    .company-initials {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      height: 100%;
+      min-height: 48px;
+      font-weight: 700;
+      color: var(--text, #25334a)
+    }
 
-/* Preserve the full supplied project images without cropping. */
-.project-image-full{object-fit:contain;background:#f4f4f4}
+    .project-placeholder {
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #dce9f4, #ebe5f5);
+      font-size: 52px;
+      color: #465d80
+    }
 
-/* Community feature inspired by the supplied GDG reference. */
-.community-feature{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:54px;align-items:center;max-width:1120px;margin:0 auto;padding:60px 48px;background:#090b0e;border:1px solid #252635;border-radius:30px;color:#f7f8fc;font-family:Arial,Helvetica,sans-serif;box-shadow:0 24px 50px #0002}
-.community-eyebrow{font-size:10px;font-weight:700;letter-spacing:2.4px;color:#a8afc0;margin:0 0 30px}
-.community-heading{display:flex;align-items:center;gap:22px;margin-bottom:28px}
-.community-kicker{font-size:11px;letter-spacing:1.8px;font-weight:700;color:#d1d4dd;margin:0 0 9px}
-.community-feature h2{color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:clamp(30px,3.3vw,46px);line-height:1.1;letter-spacing:-1.5px}
-.community-mark{width:72px;height:58px;position:relative;flex-shrink:0}
-.community-mark span{position:absolute;width:37px;height:16px;border-radius:10px}
-.community-mark span:nth-child(1){background:#ea4335;top:12px;left:0;transform:rotate(-36deg)}
-.community-mark span:nth-child(2){background:#4285f4;top:30px;left:0;transform:rotate(36deg)}
-.community-mark span:nth-child(3){background:#34a853;top:12px;right:0;transform:rotate(36deg);z-index:1}
-.community-mark span:nth-child(4){background:#fbbc04;top:30px;right:0;transform:rotate(-36deg)}
-.community-intro{font-size:22px;line-height:1.5;font-weight:600;color:#f4f5fa;margin:0 0 18px}
-.community-description{font-size:15px;line-height:1.85;color:#c0c4cf;margin:0 0 22px}
-.community-highlight{color:#66ddec;font-size:16px;line-height:1.6;font-weight:600;margin:0 0 26px}
-.community-activities{display:flex;gap:10px;flex-wrap:wrap;list-style:none;padding:0;margin:0 0 30px}
-.community-activities li{display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid #303145;border-radius:30px;background:#191a29;font-size:11px;color:#dce0ea}
-.activity-dot{display:inline-block;width:7px;height:7px;border-radius:50%;flex-shrink:0}.dot-blue{background:#4285f4}.dot-yellow{background:#fbbc04}.dot-green{background:#34a853}
-.community-cta{display:inline-flex;align-items:center;gap:30px;background:#4285f4;color:white;border:1px solid #4285f4;border-radius:30px;padding:15px 25px;font-size:14px;font-weight:700;transition:background .2s,transform .2s}.community-cta:hover{background:#2869d3;transform:translateY(-2px)}.community-cta span{font-size:22px;line-height:1}
-.organizer-card{padding:34px 20px 20px;border:1px solid #2b2d43;border-radius:28px;background:radial-gradient(ellipse at 50% 15%,#1a2031 0%,#0e101b 65%);text-align:center}
-.organizer-orbit{width:165px;height:165px;border:5px solid #f6f7fb;border-radius:50%;margin:0 auto 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#191f1c;color:#60cf77}
-.orbit-code{font-size:38px;line-height:1;font-family:monospace;font-weight:700}.orbit-globe{width:58px;height:58px;color:#65b271}
-.organizer-badge{display:inline-block;color:#54d7ee;background:#191b2c;border:1px solid #33344c;padding:7px 15px;border-radius:30px;font-size:10px;font-weight:700;letter-spacing:1.6px}
-.community-feature .organizer-card h3{color:#f7f8fc;font:600 20px/1.3 Arial,Helvetica,sans-serif;margin:20px 0 10px}
-.organizer-caption{color:#acb3c6;font-size:13px;line-height:1.6;margin:0 0 26px}
-.organizer-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:left;background:#1a1b2d;border:1px solid #303149;border-radius:15px;padding:18px 14px}
-.organizer-footer strong{display:block;font-size:14px;color:#f8f8fc;margin-bottom:9px}.organizer-footer div>span{display:flex;align-items:center;gap:7px;font-size:8px;font-weight:600;letter-spacing:.7px;color:#c9ceda}
-.community-colors{display:flex;flex-shrink:0}.community-colors span{width:11px;height:11px;border:1px solid #1a1b2d;border-radius:50%;margin-left:-2px;background:#4285f4}.community-colors span:nth-child(2){background:#ea4335}.community-colors span:nth-child(3){background:#fbbc04}.community-colors span:nth-child(4){background:#34a853}
-@media(max-width:980px){.community-feature{gap:30px;padding:40px 28px;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}.community-heading{gap:14px}.community-mark{width:60px}.community-mark span{width:32px}}
-@media(max-width:700px){.community-feature{grid-template-columns:minmax(0,1fr);padding:32px 22px;gap:32px}.community-heading{align-items:flex-start}.community-feature h2{font-size:32px}.community-kicker{font-size:9px;letter-spacing:1px}.community-intro{font-size:20px}.organizer-card{width:100%;max-width:370px;justify-self:center}.community-description{font-size:14px}.community-activities{gap:8px}.community-eyebrow{font-size:9px}}
+    .tl-desc {
+      padding-left: 18px
+    }
 
-.community-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
-.community-profile-link{display:inline-flex;align-items:center;gap:12px;padding:12px 16px;border:1px solid #41465d;border-radius:28px;color:#e1e6f2;font-size:12px;font-weight:600;line-height:1.5}
-.community-profile-link:hover{background:#202438;color:#fff;border-color:#688bc3}
+    .tl-desc li+li {
+      margin-top: 10px
+    }
 
-/* Supplied GDG logo, displayed without cropping or alteration. */
-.gdg-heading-logo{display:block;width:72px;height:72px;object-fit:contain;border-radius:12px;flex-shrink:0}
-.gdg-organizer-logo{display:block;width:165px;height:165px;object-fit:contain;border-radius:20px;margin:0 auto 24px}
-@media(max-width:700px){.gdg-heading-logo{width:60px;height:60px}}
-/* Unified bright theme and compact, content-led spacing. */
-:root{color-scheme:light;--pink:#db1858;--heading-red:#d51655;--text:#70364c;--panel-bg:#fffafd;--shadow-lg:0 10px 28px #d9497810;--shadow-md:0 5px 18px #d9497812}
-html{scroll-padding-top:80px}
-body{background:linear-gradient(120deg,#fff0f6,#fff6ed 45%,#f6efff);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
-h1,h2,.hero-title{font-family:'Playfair Display',Georgia,serif}
-body::before,body::after{display:none}
-.site-header{background:#fffafbf5;border-bottom:1px solid #f5c6d7}
-.nav-container{min-height:66px;padding:12px 24px}.nav-links{font-size:13px;gap:20px}
-main{padding-top:66px}
-.hero{min-height:0;padding:65px 24px 32px}
-.hero.hero-ggb::before{opacity:.26;filter:saturate(1.2);background-position:center 55%}
-.hero.hero-ggb::after{background:linear-gradient(110deg,#fff2f5c9,#ffe7efd9 55%,#fff5eacc)}
-.hero-title{font-size:clamp(40px,5vw,68px);text-shadow:none;color:#ce1455}
-.hero-eyebrow{color:#96425e;font-size:11px;letter-spacing:2px;margin-bottom:14px}
-.hero-subtitle{margin:8px 0 22px;padding:9px 22px;font-size:16px;box-shadow:0 7px 18px #f9044d20}
-.hero-actions{margin-bottom:18px;gap:12px}.hero-scroll{gap:3px}.hero-scroll-text{color:#96425e;font-size:9px}.hero-scroll-btn{width:30px;height:30px;background:#fff9}
-.section{padding:0 24px 28px}#about.section{padding-top:28px}
-.panel{padding:28px 32px;border:1px solid #f2d4df;border-radius:22px}
-.panel-header h2,.skills-title{font-size:32px;line-height:1.2}.panel-subtitle{margin:8px auto 0;font-size:14px}
-.about-grid{grid-template-columns:minmax(0,1fr) 240px;gap:30px;margin-top:20px;align-items:center}
-.about-main p{margin:0 0 14px;font-size:15px;line-height:1.8}.profile-img{max-width:240px;max-height:270px;object-fit:cover}.about-social{gap:12px;margin-top:15px}.social-bubble{width:40px;height:40px;box-shadow:none}.social-bubble i{font-size:18px}
-.edu-card{padding-top:18px;padding-bottom:18px;box-shadow:none;background:linear-gradient(110deg,#fff,#fff0f6);border-color:#f4d5e1}.edu-card:first-of-type{margin-top:20px}.edu-card+.edu-card{margin-top:12px}.edu-desc{margin-bottom:0}.edu-pill{white-space:normal;flex-shrink:0}
-.timeline{display:grid;gap:14px;margin-top:22px;padding:0}.timeline::before,.tl-dot{display:none}
-.tl-item,.tl-item.left,.tl-item.right{display:block;margin:0;padding:0;width:100%}
-.tl-item.left .tl-card,.tl-item.right .tl-card{width:100%;grid-column:auto}
-.tl-card{grid-template-columns:60px minmax(0,1fr);padding:20px;gap:18px;border:1px solid #f2d5df;border-left:4px solid #f45b8e;background:linear-gradient(110deg,#fff,#fff8fb);box-shadow:none}
-.tl-item:nth-child(even) .tl-card{border-left-color:#be86df;background:linear-gradient(110deg,#fff,#fbf5ff)}
-.tl-logo{width:60px;height:60px;border-radius:13px;background:#fff0f5}.tl-top{flex-wrap:wrap;gap:8px;align-items:baseline}.tl-role{font-size:17px}.tl-pill{font-size:11px;white-space:normal}.tl-company{font-size:13px;margin-bottom:10px}.tl-desc{font-size:13px;line-height:1.65;color:#70364c}.tl-desc li+li{margin-top:5px}
-.projects-section{margin-top:22px}.projects-subhead{margin-bottom:0;font-size:14px}.projects-grid{margin-top:16px;gap:18px;grid-template-columns:repeat(3,minmax(0,1fr))}.project-image{height:165px}.project-body{padding:18px}.project-body h3{font-size:16px;line-height:1.4}.project-desc{font-size:13px;line-height:1.65}.project-tech{font-size:12px}.project-card{box-shadow:none;border-color:#f1d4e0}.project-link{padding:7px 15px;font-size:12px}.project-placeholder{background:linear-gradient(125deg,#ffe1ed,#f0e1ff);color:#bf3678}
-.project-card.project-more-inline{background:linear-gradient(135deg,#ffe2ee,#f4e8ff);box-shadow:none}.project-more-inline-title{font-size:28px}
-.courses-grid{gap:12px;margin-top:22px;grid-template-columns:repeat(3,minmax(0,1fr))}.course-card{padding:17px;box-shadow:none;background:linear-gradient(130deg,#fff,#fff2f7);border-color:#f2d3df}.course-card:nth-child(3n+2){background:linear-gradient(130deg,#fff,#f6edff)}.course-card h3{font-size:14px}.course-meta{font-size:12px;overflow-wrap:anywhere}
-.skills{padding:0 24px 28px}.skills>.container{padding:28px 32px;background:var(--panel-bg);border:1px solid #f2d4df;border-radius:22px;box-shadow:var(--shadow-lg)}.skills-head{margin-bottom:22px}.skills-title{margin-bottom:0}.skills-grid-v2{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.skill-card-v2{min-height:0;padding:18px;box-shadow:none;background:#fff2f7;border-color:#f2d3df}.skill-card-v2:nth-child(even){background:#f7efff}.skill-card-head{gap:10px;margin-bottom:12px}.skill-card-v2 h3{font-size:14px;color:#873958}.skill-ico{width:32px;height:32px;border-radius:10px;flex-shrink:0;font-size:13px}.chips-v2{gap:7px}.chip-v2{font-size:11px;padding:5px 10px;background:#fff;color:#a52b59}
-.community-feature{padding:30px 32px;gap:28px;background:linear-gradient(115deg,#fff3f8,#ffe6f0 55%,#f3e8ff);border:1px solid #f2c5d8;border-radius:22px;color:#70364c;box-shadow:var(--shadow-lg);font-family:Arial,Helvetica,sans-serif}
-.community-eyebrow{margin-bottom:18px;color:#a33163}.community-heading{margin-bottom:18px;gap:16px}.community-kicker{color:#974268;font-size:10px}.community-feature h2{color:#d51655;font-family:'Playfair Display',Georgia,serif;font-size:36px}.community-intro{font-size:19px;line-height:1.5;color:#8b3655;margin-bottom:12px}.community-description{color:#70364c;font-size:14px;line-height:1.7;margin-bottom:14px}.community-highlight{color:#a02c74;font-size:14px;margin-bottom:18px}.community-activities{margin-bottom:20px;gap:7px}.community-activities li{background:#fff8fc;border-color:#efbfd2;color:#873958;font-size:10px;padding:7px 10px}
-.organizer-card{padding:24px 18px 18px;background:linear-gradient(150deg,#fff,#fff2f8);border-color:#ecc7da;border-radius:22px;box-shadow:0 8px 24px #ce427d0d}.gdg-organizer-logo{width:115px;height:115px;margin-bottom:16px;border-radius:16px}.gdg-heading-logo{width:62px;height:62px}.organizer-badge{color:#ac316d;background:#fce6f1;border-color:#f3c8dd}.community-feature .organizer-card h3{color:#b92a66;font-size:18px;margin:14px 0 8px}.organizer-caption{color:#88516b;margin-bottom:18px}.organizer-footer{background:#f9e8f5;border-color:#ecc8de;padding:14px}.organizer-footer strong{color:#9d3767;font-size:13px}.organizer-footer div>span{color:#895070}.community-colors span{border-color:#f9e8f5}
-.community-cta{background:linear-gradient(120deg,#eb3977,#d82168);border-color:#e84480;padding:11px 18px;font-size:12px;gap:15px}.community-cta:hover{background:#d82168}.community-profile-link{background:#fff9fc;color:#a02c63;border-color:#eaaecb;padding:10px 14px;font-size:11px}.community-profile-link:hover{background:#ffe0ee;color:#a02c63;border-color:#df73a1}.community-links{gap:9px}
-.contact-grid{margin-top:22px;gap:24px;align-items:center}.contact-form-wrapper{padding:20px;box-shadow:none;background:#fff4f8;border-color:#f3d0df}.contact-info{padding:22px;border-radius:18px;background:linear-gradient(135deg,#ffe6f0,#f1e8ff)}.form-field{margin-bottom:12px}.form-field input,.form-field textarea{background:#fff;border-color:#edcfda;color:#70364c}.contact-lines{font-size:13px;overflow-wrap:anywhere}.site-footer{padding:8px 20px 24px}
-@media(max-width:980px){.nav-links{gap:12px;font-size:12px}.about-grid{grid-template-columns:minmax(0,1fr) 200px}.projects-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.courses-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.skills-grid-v2{grid-template-columns:repeat(2,minmax(0,1fr))}.community-feature{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}}
-@media(max-width:700px){.hero{padding:38px 18px 24px}.hero-title{font-size:42px}.hero-subtitle{font-size:13px;padding:8px 15px}.hero-eyebrow{font-size:9px}.hero-actions{gap:8px}.btn{padding:10px 16px;font-size:12px}.section{padding:0 14px 20px}#about.section{padding-top:20px}.panel,.skills>.container{padding:22px 18px;border-radius:18px}.panel-header h2,.skills-title{font-size:28px}.about-grid{grid-template-columns:1fr;gap:18px}.about-image{grid-row:1}.profile-img{width:150px;height:170px}.about-main p{font-size:14px}.about-social{justify-content:flex-start}.tl-card{grid-template-columns:42px minmax(0,1fr);padding:15px;gap:12px}.tl-logo{width:42px;height:42px}.tl-top{align-items:flex-start;gap:6px}.tl-role{font-size:15px}.tl-pill{padding:4px 8px;font-size:10px}.tl-desc{font-size:12px}.skills{padding:0 14px 20px}.skill-card-v2{padding:14px}.community-feature{grid-template-columns:1fr;padding:24px 20px;gap:22px;border-radius:18px}.community-feature h2{font-size:30px}.community-intro{font-size:18px}.organizer-card{max-width:100%;width:100%}.organizer-caption br{display:none}.gdg-organizer-logo{width:90px;height:90px}.contact-grid{gap:16px}.contact-form-wrapper{padding:16px}.edu-card{padding:16px}.edu-main h3{font-size:15px}}
-@media(max-width:480px){.projects-grid,.courses-grid,.skills-grid-v2{grid-template-columns:minmax(0,1fr)}.project-image{height:180px}.project-body{padding:16px}.project-more-inline-link{padding:24px}.project-more-inline-title{font-size:23px}.project-more-inline-content{flex-direction:row;align-items:center}.project-more-inline-title br{display:none}.project-more-inline-icon{font-size:24px}.community-kicker{font-size:9px}.gdg-heading-logo{width:52px;height:52px}}
+    [hidden] {
+      display: none !important
+    }
+
+    .mobile-menu-toggle {
+      display: none
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #5485d6;
+      outline-offset: 4px
+    }
+
+    @media(max-width:780px) {
+      .mobile-menu-toggle {
+        display: block;
+        background: transparent;
+        color: inherit;
+        border: 1px solid currentColor;
+        border-radius: 8px;
+        padding: 8px 12px;
+        cursor: pointer
+      }
+
+      .nav-links.is-open {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 16px 24px;
+        background: #fff;
+        box-shadow: 0 8px 15px #0002;
+        max-height: 75vh;
+        overflow: auto
+      }
+
+      body[data-theme="dark"] .nav-links.is-open {
+        background: #111827
+      }
+
+      .nav-links.is-open a {
+        padding: 8px 0
+      }
+
+      .tl-top,
+      .tl-content {
+        min-width: 0
+      }
+
+      .tl-pill {
+        white-space: normal
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important
+      }
+    }
+
+    .edu-card+.edu-card {
+      margin-top: 20px
+    }
+
+    @media(max-width:640px) {
+      .edu-card {
+        flex-direction: column;
+        padding: 20px
+      }
+
+      .edu-logo-inline {
+        position: static
+      }
+
+      .edu-pill {
+        white-space: normal
+      }
+
+      .projects-grid {
+        grid-template-columns: minmax(0, 1fr)
+      }
+
+      .tl-card {
+        grid-template-columns: minmax(0, 1fr)
+      }
+
+      .tl-logo {
+        width: 56px;
+        height: 56px
+      }
+    }
+
+    /* Preserve the full supplied project images without cropping. */
+    .project-image-full {
+      object-fit: contain;
+      background: #f4f4f4
+    }
+
+    /* Community feature inspired by the supplied GDG reference. */
+    .community-feature {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+      gap: 54px;
+      align-items: center;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 60px 48px;
+      background: #090b0e;
+      border: 1px solid #252635;
+      border-radius: 30px;
+      color: #f7f8fc;
+      font-family: Arial, Helvetica, sans-serif;
+      box-shadow: 0 24px 50px #0002
+    }
+
+    .community-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      color: #a8afc0;
+      margin: 0 0 30px
+    }
+
+    .community-heading {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-bottom: 28px
+    }
+
+    .community-kicker {
+      font-size: 11px;
+      letter-spacing: 1.8px;
+      font-weight: 700;
+      color: #d1d4dd;
+      margin: 0 0 9px
+    }
+
+    .community-feature h2 {
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(30px, 3.3vw, 46px);
+      line-height: 1.1;
+      letter-spacing: -1.5px
+    }
+
+    .community-mark {
+      width: 72px;
+      height: 58px;
+      position: relative;
+      flex-shrink: 0
+    }
+
+    .community-mark span {
+      position: absolute;
+      width: 37px;
+      height: 16px;
+      border-radius: 10px
+    }
+
+    .community-mark span:nth-child(1) {
+      background: #ea4335;
+      top: 12px;
+      left: 0;
+      transform: rotate(-36deg)
+    }
+
+    .community-mark span:nth-child(2) {
+      background: #4285f4;
+      top: 30px;
+      left: 0;
+      transform: rotate(36deg)
+    }
+
+    .community-mark span:nth-child(3) {
+      background: #34a853;
+      top: 12px;
+      right: 0;
+      transform: rotate(36deg);
+      z-index: 1
+    }
+
+    .community-mark span:nth-child(4) {
+      background: #fbbc04;
+      top: 30px;
+      right: 0;
+      transform: rotate(-36deg)
+    }
+
+    .community-intro {
+      font-size: 22px;
+      line-height: 1.5;
+      font-weight: 600;
+      color: #f4f5fa;
+      margin: 0 0 18px
+    }
+
+    .community-description {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #c0c4cf;
+      margin: 0 0 22px
+    }
+
+    .community-highlight {
+      color: #66ddec;
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 600;
+      margin: 0 0 26px
+    }
+
+    .community-activities {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px
+    }
+
+    .community-activities li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border: 1px solid #303145;
+      border-radius: 30px;
+      background: #191a29;
+      font-size: 11px;
+      color: #dce0ea
+    }
+
+    .activity-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0
+    }
+
+    .dot-blue {
+      background: #4285f4
+    }
+
+    .dot-yellow {
+      background: #fbbc04
+    }
+
+    .dot-green {
+      background: #34a853
+    }
+
+    .community-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 30px;
+      background: #4285f4;
+      color: white;
+      border: 1px solid #4285f4;
+      border-radius: 30px;
+      padding: 15px 25px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background .2s, transform .2s
+    }
+
+    .community-cta:hover {
+      background: #2869d3;
+      transform: translateY(-2px)
+    }
+
+    .community-cta span {
+      font-size: 22px;
+      line-height: 1
+    }
+
+    .organizer-card {
+      padding: 34px 20px 20px;
+      border: 1px solid #2b2d43;
+      border-radius: 28px;
+      background: radial-gradient(ellipse at 50% 15%, #1a2031 0%, #0e101b 65%);
+      text-align: center
+    }
+
+    .organizer-orbit {
+      width: 165px;
+      height: 165px;
+      border: 5px solid #f6f7fb;
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #191f1c;
+      color: #60cf77
+    }
+
+    .orbit-code {
+      font-size: 38px;
+      line-height: 1;
+      font-family: monospace;
+      font-weight: 700
+    }
+
+    .orbit-globe {
+      width: 58px;
+      height: 58px;
+      color: #65b271
+    }
+
+    .organizer-badge {
+      display: inline-block;
+      color: #54d7ee;
+      background: #191b2c;
+      border: 1px solid #33344c;
+      padding: 7px 15px;
+      border-radius: 30px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.6px
+    }
+
+    .community-feature .organizer-card h3 {
+      color: #f7f8fc;
+      font: 600 20px/1.3 Arial, Helvetica, sans-serif;
+      margin: 20px 0 10px
+    }
+
+    .organizer-caption {
+      color: #acb3c6;
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 0 0 26px
+    }
+
+    .organizer-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      text-align: left;
+      background: #1a1b2d;
+      border: 1px solid #303149;
+      border-radius: 15px;
+      padding: 18px 14px
+    }
+
+    .organizer-footer strong {
+      display: block;
+      font-size: 14px;
+      color: #f8f8fc;
+      margin-bottom: 9px
+    }
+
+    .organizer-footer div>span {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: .7px;
+      color: #c9ceda
+    }
+
+    .community-colors {
+      display: flex;
+      flex-shrink: 0
+    }
+
+    .community-colors span {
+      width: 11px;
+      height: 11px;
+      border: 1px solid #1a1b2d;
+      border-radius: 50%;
+      margin-left: -2px;
+      background: #4285f4
+    }
+
+    .community-colors span:nth-child(2) {
+      background: #ea4335
+    }
+
+    .community-colors span:nth-child(3) {
+      background: #fbbc04
+    }
+
+    .community-colors span:nth-child(4) {
+      background: #34a853
+    }
+
+    @media(max-width:980px) {
+      .community-feature {
+        gap: 30px;
+        padding: 40px 28px;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr)
+      }
+
+      .community-heading {
+        gap: 14px
+      }
+
+      .community-mark {
+        width: 60px
+      }
+
+      .community-mark span {
+        width: 32px
+      }
+    }
+
+    @media(max-width:700px) {
+      .community-feature {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 32px 22px;
+        gap: 32px
+      }
+
+      .community-heading {
+        align-items: flex-start
+      }
+
+      .community-feature h2 {
+        font-size: 32px
+      }
+
+      .community-kicker {
+        font-size: 9px;
+        letter-spacing: 1px
+      }
+
+      .community-intro {
+        font-size: 20px
+      }
+
+      .organizer-card {
+        width: 100%;
+        max-width: 370px;
+        justify-self: center
+      }
+
+      .community-description {
+        font-size: 14px
+      }
+
+      .community-activities {
+        gap: 8px
+      }
+
+      .community-eyebrow {
+        font-size: 9px
+      }
+    }
+
+    .community-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px
+    }
+
+    .community-profile-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border: 1px solid #41465d;
+      border-radius: 28px;
+      color: #e1e6f2;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5
+    }
+
+    .community-profile-link:hover {
+      background: #202438;
+      color: #fff;
+      border-color: #688bc3
+    }
+
+    /* Supplied GDG logo, displayed without cropping or alteration. */
+    .gdg-heading-logo {
+      display: block;
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      border-radius: 12px;
+      flex-shrink: 0
+    }
+
+    .gdg-organizer-logo {
+      display: block;
+      width: 165px;
+      height: 165px;
+      object-fit: contain;
+      border-radius: 20px;
+      margin: 0 auto 24px
+    }
+
+    @media(max-width:700px) {
+      .gdg-heading-logo {
+        width: 60px;
+        height: 60px
+      }
+    }
+
+    /* Unified bright theme and compact, content-led spacing. */
+    :root {
+      color-scheme: light;
+      --pink: #db1858;
+      --heading-red: #d51655;
+      --text: #70364c;
+      --panel-bg: #fffafd;
+      --shadow-lg: 0 10px 28px #d9497810;
+      --shadow-md: 0 5px 18px #d9497812
+    }
+
+    html {
+      scroll-padding-top: 80px
+    }
+
+    body {
+      background: linear-gradient(120deg, #fff0f6, #fff6ed 45%, #f6efff);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65
+    }
+
+    h1,
+    h2,
+    .hero-title {
+      font-family: 'Playfair Display', Georgia, serif
+    }
+
+    body::before,
+    body::after {
+      display: none
+    }
+
+    .site-header {
+      background: #fffafbf5;
+      border-bottom: 1px solid #f5c6d7
+    }
+
+    .nav-container {
+      min-height: 66px;
+      padding: 12px 24px
+    }
+
+    .nav-links {
+      font-size: 13px;
+      gap: 20px
+    }
+
+    main {
+      padding-top: 66px
+    }
+
+    .hero {
+      min-height: 0;
+      padding: 65px 24px 32px
+    }
+
+    .hero.hero-ggb::before {
+      opacity: .26;
+      filter: saturate(1.2);
+      background-position: center 55%
+    }
+
+    .hero.hero-ggb::after {
+      background: linear-gradient(110deg, #fff2f5c9, #ffe7efd9 55%, #fff5eacc)
+    }
+
+    .hero-title {
+      font-size: clamp(40px, 5vw, 68px);
+      text-shadow: none;
+      color: #ce1455
+    }
+
+    .hero-eyebrow {
+      color: #96425e;
+      font-size: 11px;
+      letter-spacing: 2px;
+      margin-bottom: 14px
+    }
+
+    .hero-subtitle {
+      margin: 8px 0 22px;
+      padding: 9px 22px;
+      font-size: 16px;
+      box-shadow: 0 7px 18px #f9044d20
+    }
+
+    .hero-actions {
+      margin-bottom: 18px;
+      gap: 12px
+    }
+
+    .hero-scroll {
+      gap: 3px
+    }
+
+    .hero-scroll-text {
+      color: #96425e;
+      font-size: 9px
+    }
+
+    .hero-scroll-btn {
+      width: 30px;
+      height: 30px;
+      background: #fff9
+    }
+
+    .section {
+      padding: 0 24px 28px
+    }
+
+    #about.section {
+      padding-top: 28px
+    }
+
+    .panel {
+      padding: 28px 32px;
+      border: 1px solid #f2d4df;
+      border-radius: 22px
+    }
+
+    .panel-header h2,
+    .skills-title {
+      font-size: 32px;
+      line-height: 1.2
+    }
+
+    .panel-subtitle {
+      margin: 8px auto 0;
+      font-size: 14px
+    }
+
+    .about-grid {
+      grid-template-columns: minmax(0, 1fr) 240px;
+      gap: 30px;
+      margin-top: 20px;
+      align-items: center
+    }
+
+    .about-main p {
+      margin: 0 0 14px;
+      font-size: 15px;
+      line-height: 1.8
+    }
+
+    .profile-img {
+      max-width: 240px;
+      max-height: 270px;
+      object-fit: cover
+    }
+
+    .about-social {
+      gap: 12px;
+      margin-top: 15px
+    }
+
+    .social-bubble {
+      width: 40px;
+      height: 40px;
+      box-shadow: none
+    }
+
+    .social-bubble i {
+      font-size: 18px
+    }
+
+    .edu-card {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      box-shadow: none;
+      background: linear-gradient(110deg, #fff, #fff0f6);
+      border-color: #f4d5e1
+    }
+
+    .edu-card:first-of-type {
+      margin-top: 20px
+    }
+
+    .edu-card+.edu-card {
+      margin-top: 12px
+    }
+
+    .edu-desc {
+      margin-bottom: 0
+    }
+
+    .edu-pill {
+      white-space: normal;
+      flex-shrink: 0
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+      padding: 0
+    }
+
+    .timeline::before,
+    .tl-dot {
+      display: none
+    }
+
+    .tl-item,
+    .tl-item.left,
+    .tl-item.right {
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%
+    }
+
+    .tl-item.left .tl-card,
+    .tl-item.right .tl-card {
+      width: 100%;
+      grid-column: auto
+    }
+
+    .tl-card {
+      grid-template-columns: 60px minmax(0, 1fr);
+      padding: 20px;
+      gap: 18px;
+      border: 1px solid #f2d5df;
+      border-left: 4px solid #f45b8e;
+      background: linear-gradient(110deg, #fff, #fff8fb);
+      box-shadow: none
+    }
+
+    .tl-item:nth-child(even) .tl-card {
+      border-left-color: #be86df;
+      background: linear-gradient(110deg, #fff, #fbf5ff)
+    }
+
+    .tl-logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 13px;
+      background: #fff0f5
+    }
+
+    .tl-top {
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: baseline
+    }
+
+    .tl-role {
+      font-size: 17px
+    }
+
+    .tl-pill {
+      font-size: 11px;
+      white-space: normal
+    }
+
+    .tl-company {
+      font-size: 13px;
+      margin-bottom: 10px
+    }
+
+    .tl-desc {
+      font-size: 13px;
+      line-height: 1.65;
+      color: #70364c
+    }
+
+    .tl-desc li+li {
+      margin-top: 5px
+    }
+
+    .projects-section {
+      margin-top: 22px
+    }
+
+    .projects-subhead {
+      margin-bottom: 0;
+      font-size: 14px
+    }
+
+    .projects-grid {
+      margin-top: 16px;
+      gap: 18px;
+      grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .project-image {
+      height: 165px
+    }
+
+    .project-body {
+      padding: 18px
+    }
+
+    .project-body h3 {
+      font-size: 16px;
+      line-height: 1.4
+    }
+
+    .project-desc {
+      font-size: 13px;
+      line-height: 1.65
+    }
+
+    .project-tech {
+      font-size: 12px
+    }
+
+    .project-card {
+      box-shadow: none;
+      border-color: #f1d4e0
+    }
+
+    .project-link {
+      padding: 7px 15px;
+      font-size: 12px
+    }
+
+    .project-placeholder {
+      background: linear-gradient(125deg, #ffe1ed, #f0e1ff);
+      color: #bf3678
+    }
+
+    .project-card.project-more-inline {
+      background: linear-gradient(135deg, #ffe2ee, #f4e8ff);
+      box-shadow: none
+    }
+
+    .project-more-inline-title {
+      font-size: 28px
+    }
+
+    .courses-grid {
+      gap: 12px;
+      margin-top: 22px;
+      grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .course-card {
+      padding: 17px;
+      box-shadow: none;
+      background: linear-gradient(130deg, #fff, #fff2f7);
+      border-color: #f2d3df
+    }
+
+    .course-card:nth-child(3n+2) {
+      background: linear-gradient(130deg, #fff, #f6edff)
+    }
+
+    .course-card h3 {
+      font-size: 14px
+    }
+
+    .course-meta {
+      font-size: 12px;
+      overflow-wrap: anywhere
+    }
+
+    .skills {
+      padding: 0 24px 28px
+    }
+
+    .skills>.container {
+      padding: 28px 32px;
+      background: var(--panel-bg);
+      border: 1px solid #f2d4df;
+      border-radius: 22px;
+      box-shadow: var(--shadow-lg)
+    }
+
+    .skills-head {
+      margin-bottom: 22px
+    }
+
+    .skills-title {
+      margin-bottom: 0
+    }
+
+    .skills-grid-v2 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px
+    }
+
+    .skill-card-v2 {
+      min-height: 0;
+      padding: 18px;
+      box-shadow: none;
+      background: #fff2f7;
+      border-color: #f2d3df
+    }
+
+    .skill-card-v2:nth-child(even) {
+      background: #f7efff
+    }
+
+    .skill-card-head {
+      gap: 10px;
+      margin-bottom: 12px
+    }
+
+    .skill-card-v2 h3 {
+      font-size: 14px;
+      color: #873958
+    }
+
+    .skill-ico {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      font-size: 13px
+    }
+
+    .chips-v2 {
+      gap: 7px
+    }
+
+    .chip-v2 {
+      font-size: 11px;
+      padding: 5px 10px;
+      background: #fff;
+      color: #a52b59
+    }
+
+    .community-feature {
+      padding: 30px 32px;
+      gap: 28px;
+      background: linear-gradient(115deg, #fff3f8, #ffe6f0 55%, #f3e8ff);
+      border: 1px solid #f2c5d8;
+      border-radius: 22px;
+      color: #70364c;
+      box-shadow: var(--shadow-lg);
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+    .community-eyebrow {
+      margin-bottom: 18px;
+      color: #a33163
+    }
+
+    .community-heading {
+      margin-bottom: 18px;
+      gap: 16px
+    }
+
+    .community-kicker {
+      color: #974268;
+      font-size: 10px
+    }
+
+    .community-feature h2 {
+      color: #d51655;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 36px
+    }
+
+    .community-intro {
+      font-size: 19px;
+      line-height: 1.5;
+      color: #8b3655;
+      margin-bottom: 12px
+    }
+
+    .community-description {
+      color: #70364c;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 14px
+    }
+
+    .community-highlight {
+      color: #a02c74;
+      font-size: 14px;
+      margin-bottom: 18px
+    }
+
+    .community-activities {
+      margin-bottom: 20px;
+      gap: 7px
+    }
+
+    .community-activities li {
+      background: #fff8fc;
+      border-color: #efbfd2;
+      color: #873958;
+      font-size: 10px;
+      padding: 7px 10px
+    }
+
+    .organizer-card {
+      padding: 24px 18px 18px;
+      background: linear-gradient(150deg, #fff, #fff2f8);
+      border-color: #ecc7da;
+      border-radius: 22px;
+      box-shadow: 0 8px 24px #ce427d0d
+    }
+
+    .gdg-organizer-logo {
+      width: 115px;
+      height: 115px;
+      margin-bottom: 16px;
+      border-radius: 16px
+    }
+
+    .gdg-heading-logo {
+      width: 62px;
+      height: 62px
+    }
+
+    .organizer-badge {
+      color: #ac316d;
+      background: #fce6f1;
+      border-color: #f3c8dd
+    }
+
+    .community-feature .organizer-card h3 {
+      color: #b92a66;
+      font-size: 18px;
+      margin: 14px 0 8px
+    }
+
+    .organizer-caption {
+      color: #88516b;
+      margin-bottom: 18px
+    }
+
+    .organizer-footer {
+      background: #f9e8f5;
+      border-color: #ecc8de;
+      padding: 14px
+    }
+
+    .organizer-footer strong {
+      color: #9d3767;
+      font-size: 13px
+    }
+
+    .organizer-footer div>span {
+      color: #895070
+    }
+
+    .community-colors span {
+      border-color: #f9e8f5
+    }
+
+    .community-cta {
+      background: linear-gradient(120deg, #eb3977, #d82168);
+      border-color: #e84480;
+      padding: 11px 18px;
+      font-size: 12px;
+      gap: 15px
+    }
+
+    .community-cta:hover {
+      background: #d82168
+    }
+
+    .community-profile-link {
+      background: #fff9fc;
+      color: #a02c63;
+      border-color: #eaaecb;
+      padding: 10px 14px;
+      font-size: 11px
+    }
+
+    .community-profile-link:hover {
+      background: #ffe0ee;
+      color: #a02c63;
+      border-color: #df73a1
+    }
+
+    .community-links {
+      gap: 9px
+    }
+
+    .contact-grid {
+      margin-top: 22px;
+      gap: 24px;
+      align-items: center
+    }
+
+    .contact-form-wrapper {
+      padding: 20px;
+      box-shadow: none;
+      background: #fff4f8;
+      border-color: #f3d0df
+    }
+
+    .contact-info {
+      padding: 22px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffe6f0, #f1e8ff)
+    }
+
+    .form-field {
+      margin-bottom: 12px
+    }
+
+    .form-field input,
+    .form-field textarea {
+      background: #fff;
+      border-color: #edcfda;
+      color: #70364c
+    }
+
+    .contact-lines {
+      font-size: 13px;
+      overflow-wrap: anywhere
+    }
+
+    .site-footer {
+      padding: 8px 20px 24px
+    }
+
+    @media(max-width:980px) {
+      .nav-links {
+        gap: 12px;
+        font-size: 12px
+      }
+
+      .about-grid {
+        grid-template-columns: minmax(0, 1fr) 200px
+      }
+
+      .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      .courses-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      .skills-grid-v2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      .community-feature {
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr)
+      }
+    }
+
+    @media(max-width:700px) {
+      .hero {
+        padding: 38px 18px 24px
+      }
+
+      .hero-title {
+        font-size: 42px
+      }
+
+      .hero-subtitle {
+        font-size: 13px;
+        padding: 8px 15px
+      }
+
+      .hero-eyebrow {
+        font-size: 9px
+      }
+
+      .hero-actions {
+        gap: 8px
+      }
+
+      .btn {
+        padding: 10px 16px;
+        font-size: 12px
+      }
+
+      .section {
+        padding: 0 14px 20px
+      }
+
+      #about.section {
+        padding-top: 20px
+      }
+
+      .panel,
+      .skills>.container {
+        padding: 22px 18px;
+        border-radius: 18px
+      }
+
+      .panel-header h2,
+      .skills-title {
+        font-size: 28px
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 18px
+      }
+
+      .about-image {
+        grid-row: 1
+      }
+
+      .profile-img {
+        width: 150px;
+        height: 170px
+      }
+
+      .about-main p {
+        font-size: 14px
+      }
+
+      .about-social {
+        justify-content: flex-start
+      }
+
+      .tl-card {
+        grid-template-columns: 42px minmax(0, 1fr);
+        padding: 15px;
+        gap: 12px
+      }
+
+      .tl-logo {
+        width: 42px;
+        height: 42px
+      }
+
+      .tl-top {
+        align-items: flex-start;
+        gap: 6px
+      }
+
+      .tl-role {
+        font-size: 15px
+      }
+
+      .tl-pill {
+        padding: 4px 8px;
+        font-size: 10px
+      }
+
+      .tl-desc {
+        font-size: 12px
+      }
+
+      .skills {
+        padding: 0 14px 20px
+      }
+
+      .skill-card-v2 {
+        padding: 14px
+      }
+
+      .community-feature {
+        grid-template-columns: 1fr;
+        padding: 24px 20px;
+        gap: 22px;
+        border-radius: 18px
+      }
+
+      .community-feature h2 {
+        font-size: 30px
+      }
+
+      .community-intro {
+        font-size: 18px
+      }
+
+      .organizer-card {
+        max-width: 100%;
+        width: 100%
+      }
+
+      .organizer-caption br {
+        display: none
+      }
+
+      .gdg-organizer-logo {
+        width: 90px;
+        height: 90px
+      }
+
+      .contact-grid {
+        gap: 16px
+      }
+
+      .contact-form-wrapper {
+        padding: 16px
+      }
+
+      .edu-card {
+        padding: 16px
+      }
+
+      .edu-main h3 {
+        font-size: 15px
+      }
+    }
+
+    @media(max-width:480px) {
+
+      .projects-grid,
+      .courses-grid,
+      .skills-grid-v2 {
+        grid-template-columns: minmax(0, 1fr)
+      }
+
+      .project-image {
+        height: 180px
+      }
+
+      .project-body {
+        padding: 16px
+      }
+
+      .project-more-inline-link {
+        padding: 24px
+      }
+
+      .project-more-inline-title {
+        font-size: 23px
+      }
+
+      .project-more-inline-content {
+        flex-direction: row;
+        align-items: center
+      }
+
+      .project-more-inline-title br {
+        display: none
+      }
+
+      .project-more-inline-icon {
+        font-size: 24px
+      }
+
+      .community-kicker {
+        font-size: 9px
+      }
+
+      .gdg-heading-logo {
+        width: 52px;
+        height: 52px
+      }
+    }
 
 
-/* One continuous blush background across every section and content surface. */
-:root{--page-background:#fff0f6;--panel-bg:var(--page-background)}
-body,.site-header,main,.section,.hero,.panel,.skills,.skills>.container,.site-footer,
-.community-feature,.organizer-card,.organizer-footer,.contact-info,.contact-form-wrapper,
-.edu-card,.tl-card,.tl-item:nth-child(even) .tl-card,.project-card,
-.project-card.project-more-inline,.course-card,.course-card:nth-child(3n+2),
-.skill-card-v2,.skill-card-v2:nth-child(even),.project-placeholder{background:var(--page-background)}
-.hero.hero-ggb::before,.hero.hero-ggb::after{display:none}
-/* Anchor the portrait at the top so cropping only removes the lower portion. */
-.profile-img{width:240px;max-width:100%;height:270px;max-height:none;object-fit:cover;object-position:center top}
-@media(max-width:700px){.profile-img{width:150px;height:170px;object-position:center top}}
+    /* One continuous blush background across every section and content surface. */
+    :root {
+      --page-background: #fff0f6;
+      --panel-bg: var(--page-background)
+    }
 
-/* Keep project cards aligned and reserve space for the explore-card arrow. */
-#projects .project-card{min-width:0}
-#projects .project-image{flex-shrink:0}
-#projects .project-body{display:flex;flex-direction:column;flex:1;min-width:0;overflow-wrap:anywhere}
-#projects .project-link{align-self:flex-start;margin-top:auto}
-#projects .project-more-inline-link{flex:1;height:auto;min-height:180px;gap:16px;justify-content:space-between}
-#projects .project-more-inline-content{flex:1;min-width:0}
-#projects .project-more-inline-arrow{position:static;flex-shrink:0;transform:none}
-#projects .project-more-inline:hover .project-more-inline-arrow{transform:translateX(4px)}
-@media(max-width:640px){#projects .projects-grid{grid-template-columns:minmax(0,1fr)}}
+    body,
+    .site-header,
+    main,
+    .section,
+    .hero,
+    .panel,
+    .skills,
+    .skills>.container,
+    .site-footer,
+    .community-feature,
+    .organizer-card,
+    .organizer-footer,
+    .contact-info,
+    .contact-form-wrapper,
+    .edu-card,
+    .tl-card,
+    .tl-item:nth-child(even) .tl-card,
+    .project-card,
+    .project-card.project-more-inline,
+    .course-card,
+    .course-card:nth-child(3n+2),
+    .skill-card-v2,
+    .skill-card-v2:nth-child(even),
+    .project-placeholder {
+      background: var(--page-background)
+    }
 
+    .hero.hero-ggb::before,
+    .hero.hero-ggb::after {
+      display: none
+    }
+
+    /* Anchor the portrait at the top so cropping only removes the lower portion. */
+    .profile-img {
+      width: 240px;
+      max-width: 100%;
+      height: 270px;
+      max-height: none;
+      object-fit: cover;
+      object-position: center top
+    }
+
+    @media(max-width:700px) {
+      .profile-img {
+        width: 150px;
+        height: 170px;
+        object-position: center top
+      }
+    }
+
+    /* Keep project cards aligned and reserve space for the explore-card arrow. */
+    #projects .project-card {
+      min-width: 0
+    }
+
+    #projects .project-image {
+      flex-shrink: 0
+    }
+
+    #projects .project-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 0;
+      overflow-wrap: anywhere
+    }
+
+    #projects .project-link {
+      align-self: flex-start;
+      margin-top: auto
+    }
+
+    #projects .project-more-inline-link {
+      flex: 1;
+      height: auto;
+      min-height: 180px;
+      gap: 16px;
+      justify-content: space-between
+    }
+
+    #projects .project-more-inline-content {
+      flex: 1;
+      min-width: 0
+    }
+
+    #projects .project-more-inline-arrow {
+      position: static;
+      flex-shrink: 0;
+      transform: none
+    }
+
+    #projects .project-more-inline:hover .project-more-inline-arrow {
+      transform: translateX(4px)
+    }
+
+    @media(max-width:640px) {
+      #projects .projects-grid {
+        grid-template-columns: minmax(0, 1fr)
+      }
+    }
   </style>
-  </head>
+</head>
 
-  <body data-theme="light">
-    <!-- ================= NAVBAR ================= -->
-    <header class="site-header">
-  <div class="nav-container">
-    <div class="nav-brand">GN</div>
+<body data-theme="light">
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="nav-brand">GN</div>
 
-    <div class="nav-right">
-      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
-      <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
-        <a href="#welcome-hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#courses">Courses</a>
-        <a href="#community">Community</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="nav-right">
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false"
+          aria-controls="main-navigation">Menu</button>
+        <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+          <a href="#welcome-hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#courses">Courses</a>
+          <a href="#community">Community</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-    <main>
-      <!-- ================= HERO ================= -->
-<section id="welcome-hero" class="hero hero-ggb">
-  <div class="hero-overlay"></div>
+  <main>
+    <!-- ================= HERO ================= -->
+    <section id="welcome-hero" class="hero hero-ggb">
+      <div class="hero-overlay"></div>
 
-  <div class="hero-inner">
-    <p class="hero-eyebrow">Hi, WELCOME TO MY DIGITAL UNIVERSE</p>
-    <h1 class="hero-title">Gouthami Nadupuri</h1>
-    <p class="hero-subtitle">Data &amp; AI Engineer · Data Platforms · Applied AI</p>
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Hi, WELCOME TO MY DIGITAL UNIVERSE</p>
+        <h1 class="hero-title">Gouthami Nadupuri</h1>
+        <p class="hero-subtitle">Data &amp; AI Engineer · Data Platforms · Applied AI</p>
 
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">
-        <i class="fa-solid fa-briefcase"></i>
-        View My Work
-      </a>
-
-      <a href="#contact" class="btn btn-outline">
-        <i class="fa-regular fa-envelope"></i>
-        Contact Me
-      </a>
-
-      <a
-        href="assets/download/Gouthami_Nadupuri_Resume_2026.pdf"
-        target="_blank"
-        rel="noopener"
-        class="btn btn-primary"
-      >
-        <i class="fa-regular fa-file-lines"></i>
-        Resume
-      </a>
-    </div>
-
-    <div class="hero-scroll">
-      <p class="hero-scroll-text">SCROLL</p>
-      <a href="#about" aria-label="Scroll" class="hero-scroll-btn">
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
-      <!-- ================= ABOUT ================= -->
-<section id="about" class="section">
-  <div class="panel">
-    <header class="panel-header text-center">
-      <h2>Who I Am</h2>
-    </header>
-
-    <div class="about-grid">
-      <div class="about-main">
-        <p>I’m a Data &amp; AI Engineer with experience building production data platforms, cost-intelligence applications, ETL/ELT pipelines, and analytics solutions across Snowflake, ClickHouse, and GCP.</p>
-        <p>I work with SQL, Python, data modeling, cloud data warehousing, performance optimization, and governance. At GrowthArc, I translated real platform telemetry into actionable engineering and cost-optimization insights. My AI experience includes machine learning, RAG, agent evaluation, and multimodal AI evaluation across text, image, and audio.</p>
-
-        <div class="about-social">
-          <a class="social-bubble" href="https://github.com/GouthamiN25" target="_blank" rel="noopener" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-briefcase"></i>
+            View My Work
           </a>
 
-          <a class="social-bubble" href="https://www.linkedin.com/in/gouthami-nadupuri-14726455/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-
-          <a class="social-bubble" href="https://twitter.com/go250818" target="_blank" rel="noopener" aria-label="X">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-
-          <a class="social-bubble" href="mailto:gouthaminadupuri25@gmail.com" aria-label="Email">
+          <a href="#contact" class="btn btn-outline">
             <i class="fa-regular fa-envelope"></i>
+            Contact Me
+          </a>
+
+          <a href="assets/download/Gouthami_Nadupuri_Resume_2026.pdf" target="_blank" rel="noopener"
+            class="btn btn-primary">
+            <i class="fa-regular fa-file-lines"></i>
+            Resume
+          </a>
+        </div>
+
+        <div class="hero-scroll">
+          <p class="hero-scroll-text">SCROLL</p>
+          <a href="#about" aria-label="Scroll" class="hero-scroll-btn">
+            <i class="fa-solid fa-chevron-down"></i>
           </a>
         </div>
       </div>
+    </section>
 
-      <div class="about-image">
-        <img class="profile-img" src="assets/images/about/p_img.jpg" alt="Gouthami Nadupuri" />
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+      <div class="panel">
+        <header class="panel-header text-center">
+          <h2>Who I Am</h2>
+        </header>
 
-      <!-- ================= EDUCATION ================= -->
-      <section id="education" class="section">
-        <div class="panel">
-          <header class="panel-header text-center">
-            <h2>Education</h2>
-          </header>
+        <div class="about-grid">
+          <div class="about-main">
+            <p>I’m a Data &amp; AI Engineer with experience building production data platforms, cost-intelligence
+              applications, ETL/ELT pipelines, and analytics solutions across Snowflake, ClickHouse, and GCP.</p>
+            <p>I work with SQL, Python, data modeling, cloud data warehousing, performance optimization, and governance.
+              At GrowthArc, I translated real platform telemetry into actionable engineering and cost-optimization
+              insights. My AI experience includes machine learning, RAG, agent evaluation, and multimodal AI evaluation
+              across text, image, and audio.</p>
 
-          <!-- ✅ side-by-side -->
-          <article class="edu-card">
-
-  <div class="edu-logo-inline">
-    <img src="assets/logo/Uopsf.jpg" alt="University of the Pacific Logo" />
-  </div>
-
-  <div class="edu-main">
-    <h3>Master of Science in Data Science</h3>
-    <p class="edu-inst">University of the Pacific · San Francisco, USA</p>
-    <p class="edu-desc">
-      Python, SQL, Data Wrangling, Machine Learning, NLP, Data Engineering,
-      Statistics, Data Visualization.
-    </p>
-  </div>
-
-  <span class="edu-pill">Aug 2023 – May 2025</span>
-</article>
-
-            <article class="edu-card">
-
-  <div class="edu-logo-inline">
-    <img src="assets/logo/gitam.jpg" alt="GITAM University Logo" />
-  </div>
-
-  <div class="edu-main">
-    <h3>Bachelor of Technology in Computer Science and Engineering</h3>
-    <p class="edu-inst">GITAM University · Visakhapatnam, India</p>
-    <p class="edu-desc">
-      C, C++, Java, Data Structures, Web Technologies,
-      Artificial Intelligence, Software Engineering,
-      Operating Systems, Computer Networks.
-    </p>
-  </div>
-
-  <span class="edu-pill">Jul 2008 – May 2012</span>
-</article>
-        </div>
-      </section>
-
-      <!-- ================= EXPERIENCE (TIMELINE) ================= -->
-      <section id="experience" class="section">
-        <div class="panel">
-          <header class="panel-header text-center">
-            <h2>Experience</h2>
-          </header>
-
-<div class="timeline"><div class="tl-item right"><div class="tl-dot"></div><article class="tl-card"><div class="tl-logo"><img src="assets/logo/growtharc_logo.jpg" alt="GrowthArc logo" loading="lazy" /></div><div class="tl-content"><div class="tl-top"><h3 class="tl-role">Data Engineer</h3><span class="tl-pill">Jun – Sep 2026 · Newark, CA</span></div><p class="tl-company">GrowthArc</p><ul class="tl-desc"><li>Built and productionized a cost intelligence platform using Snowflake, SQL, Python, React, and JavaScript, integrating real platform telemetry for compute, storage, governance, and query-cost analysis.</li><li>Engineered SQL/Python pipelines and stored procedures using ACCOUNT_USAGE to calculate credit consumption, idle waste, utilization, query queuing, and disk spillage.</li><li>Developed recommendations for warehouse right-sizing, auto-suspend, storage cleanup, and workload optimization. Built raw-to-analytics warehouse layers with Streams, Tasks, SCD Type 2, and dimensional modeling.</li><li>Contributed to PostgreSQL-to-ClickHouse Cloud migration, including schema translation, data loading, validation, and performance checks.</li></ul></div></article></div>
-<div class="tl-item left"><div class="tl-dot"></div><article class="tl-card"><div class="tl-logo"><img src="assets/logo/Handshakeai.jpg" alt="Handshake AI logo" loading="lazy" /></div><div class="tl-content"><div class="tl-top"><h3 class="tl-role">AI Engineer</h3><span class="tl-pill">Mar – May 2026 · Remote</span></div><p class="tl-company">Handshake AI</p><ul class="tl-desc"><li>Evaluated multimodal AI outputs across text, image, and audio for correctness, reasoning, instruction following, visual consistency, and response quality.</li><li>Built challenging evaluation tasks using real-world datasets to assess reasoning, data interpretation, reliability, and production-quality behavior. Ranked generated images against defined evaluation criteria.</li></ul></div></article></div>
-<div class="tl-item right"><div class="tl-dot"></div><article class="tl-card"><div class="tl-logo"><img src="assets/logo/symosis.jpg" alt="Symosis Security" /></div><div class="tl-content"><div class="tl-top"><h3 class="tl-role">Data Scientist</h3><span class="tl-pill">Jul 2025 – Jan 2026 · Sunnyvale, CA</span></div><p class="tl-company">Symosis Security</p><ul class="tl-desc"><li>Cleaned, transformed, and explored data using Python, SQL, and Databricks for analytics and cybersecurity use cases.</li><li>Collaborated on reusable analytics pipelines, datasets, and reporting workflows, and supported Tableau and Power BI dashboards.</li></ul></div></article></div>
-<div class="tl-item left"><div class="tl-dot"></div><article class="tl-card"><div class="tl-logo"><img src="assets/logo/vitech.jpg" alt="Vitech Systems Group" /></div><div class="tl-content"><div class="tl-top"><h3 class="tl-role">Data Quality Analyst</h3><span class="tl-pill">Jan 2020 – Jun 2023 · Hyderabad, India</span></div><p class="tl-company">Vitech Systems Group</p><ul class="tl-desc"><li>Performed source-to-target validation and SQL quality checks across insurance, pension, and healthcare datasets.</li><li>Investigated missing values, duplicates, mapping defects, and reconciliation issues. Developed repeatable validation checks and partnered with teams on root-cause analysis.</li></ul></div></article></div>
-<div class="tl-item right"><div class="tl-dot"></div><article class="tl-card"><div class="tl-logo"><img src="assets/logo/wipro.jpg" alt="Wipro" /></div><div class="tl-content"><div class="tl-top"><h3 class="tl-role">Senior Data Associate · Google Project</h3><span class="tl-pill">Mar 2018 – Nov 2019 · Hyderabad, India</span></div><p class="tl-company">Wipro</p><ul class="tl-desc"><li>Supported Google Trust &amp; Safety operations by reviewing high-volume datasets against policies and quality standards. Identified inaccurate or inconsistent information and collaborated with stakeholders to resolve discrepancies.</li></ul></div></article></div>
-<div class="tl-item left"><div class="tl-dot"></div><article class="tl-card"><div class="tl-logo"><img src="assets/logo/accenture.jpg" alt="Accenture" /></div><div class="tl-content"><div class="tl-top"><h3 class="tl-role">Process Associate</h3><span class="tl-pill">Aug 2016 – Dec 2017 · Hyderabad, India</span></div><p class="tl-company">Accenture</p><ul class="tl-desc"><li>Reviewed and validated mapping, geospatial, and location data for an Uber Maps project. Investigated incomplete records using available data sources and defined business rules.</li></ul></div></article></div></div></div></section>
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="section">
-  <div class="panel">
-    <header class="panel-header text-center">
-      <h2>Projects</h2>
-      <p class="panel-subtitle">Data engineering, applied AI, and full stack products.</p>
-    </header>
-
-    <!-- ================= DATA & AI ================= -->
-    <div class="projects-section">
-      <h3 class="projects-subhead">
-        <i class="fa-solid fa-brain"></i>
-        Data & AI Projects
-      </h3>
-
-      <div class="projects-grid"><article class="project-card"><img src="assets/images/projects/cloud-cost.jpg" alt="Cloud cost optimization illustration for the GrowthArc platform" class="project-image project-image-full" loading="lazy" /><div class="project-body"><h3>GrowthArc Cost Intelligence &amp; Optimization Platform</h3><p class="project-desc">Integrated ACCOUNT_USAGE telemetry, SQL/Python pipelines, and stored procedures to analyze credit consumption, idle waste, storage, query queuing, and disk spillage. Developed recommendations for warehouse sizing and workload optimization.</p><p class="project-tech"><strong>Tech:</strong> Snowflake, SQL, Python, React</p><p class="project-desc">Professional project · GrowthArc</p></div></article><article class="project-card"><img src="assets/images/projects/CMA.jpg" alt="Database migration diagram showing data moving through clickhouse-local to ClickHouse Cloud" class="project-image project-image-full" loading="lazy" /><div class="project-body"><h3>ClickHouse Migration Accelerator</h3><p class="project-desc">Contributed schema translation, automated data loading, validation, and troubleshooting for ClickHouse Cloud migrations. Verified completeness and schema compatibility through source-to-target and post-migration checks.</p><p class="project-tech"><strong>Tech:</strong> ClickHouse, PostgreSQL, FastAPI</p><p class="project-desc">Professional project · GrowthArc</p></div></article><article class="project-card"><div class="project-image project-placeholder" aria-hidden="true"><i class="fa-solid fa-brain"></i></div><div class="project-body"><h3>AgentEval</h3><p class="project-desc">Developed evaluation workflows to assess agent behavior, response quality, and reliability. Structured testing and comparison of AI-agent outputs beyond traditional model metrics.</p><p class="project-tech"><strong>Tech:</strong> AI agents, LLM evaluation, Agentic AI</p><p class="project-desc">AI agent evaluation project</p></div></article>
-        <article class="project-card">
-          <img src="assets/images/projects/tim.jpg" alt="Time Series" class="project-image" />
-          <div class="project-body">
-            <h3>Time Series Forecasting</h3>
-            <p class="project-desc">
-              End-to-end sales forecasting using ARIMA/SARIMA, ML models, and LSTM to capture complex temporal patterns.
-            </p>
-            <p class="project-tech"><strong>Tech:</strong> ARIMA, SARIMA, Python, TensorFlow</p>
-            <a href="https://github.com/GouthamiN25/Time-Series-Forecasting" class="project-link" target="_blank" rel="noopener">
-              View Project
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card">
-  <img src="assets/images/projects/Storybloom.jpg" alt="StoryBloom – Multimodal AI Storytelling" class="project-image" loading="lazy" />
-
-  <div class="project-body">
-    <h3>StoryBloom – Multimodal AI Storytelling</h3>
-
-    <p class="project-desc">
-      Built an interactive AI storytelling experience that generates personalized
-      story scenes and supports multimodal, voice-driven interaction through a
-      modern full-stack architecture.
-    </p>
-
-    <p class="project-tech">
-      <strong>Tech:</strong> Gemini, Google GenAI SDK, FastAPI, Next.js,
-      React, WebSockets, Google Cloud Run
-    </p>
-
-    <a
-      href="https://github.com/GouthamiN25/StoryBloom"
-      class="project-link"
-      target="_blank"
-      rel="noopener"
-    >
-      View Project
-    </a>
-  </div>
-</article>
-
-        <article class="project-card">
-          <img src="assets/images/projects/cyber-sentinal.png" alt="CyberAI Sentinel" class="project-image" />
-          <div class="project-body">
-            <h3>CyberAI Sentinel – ML + RAG Cyber Analytics</h3>
-            <p class="project-desc">
-              AI cybersecurity pipeline combining machine-learning threat scoring, behavioral analytics, semantic retrieval, and RAG. Uses Sentence Transformers and Streamlit to surface threat context for incident investigations.
-            </p>
-            <p class="project-tech"><strong>Tech:</strong> Python, Scikit-learn, RAG, Sentence Transformers, Streamlit</p>
-            <a href="https://github.com/GouthamiN25/CyberAI-Sentinel-ML-RAG-Pipeline" class="project-link" target="_blank" rel="noopener">
-              View Project
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/images/projects/stocks.jpg" alt="Stock Market LLM" class="project-image" />
-          <div class="project-body">
-            <h3>Stock Market LLM Assistant</h3>
-            <p class="project-desc">
-              Transformer experiments to generate summaries and insights from finance-related text.
-            </p>
-            <p class="project-tech"><strong>Tech:</strong> Transformers, Pandas</p>
-            <a href="https://github.com/GouthamiN25/Stock-Market-LLM" class="project-link" target="_blank" rel="noopener">
-              View Project
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/images/projects/cart-pole.png" alt="Deep Q-Learning Agent for CartPole" class="project-image" />
-          <div class="project-body">
-            <h3>Deep Q-Learning Agent for CartPole</h3>
-            <p class="project-desc">Reinforcement learning DQN agent with training workflow.</p>
-            <p class="project-tech"><strong>Tech:</strong> Python, Reinforcement Learning</p>
-            <a href="https://github.com/GouthamiN25/Deep-Q-Learning-Agent-for-CartPole" class="project-link" target="_blank" rel="noopener">
-              View Project
-            </a>
-          </div>
-        </article>
-
-        <!-- Explore more AI/Data -->
-        <article class="project-card project-more-inline">
-          <a
-            href="https://github.com/GouthamiN25?tab=repositories&q=rag&type=repositories"
-            target="_blank"
-            rel="noopener"
-            class="project-more-inline-link"
-            aria-label="Explore more Data & AI projects"
-          >
-            <div class="project-more-inline-content">
-              <h3 class="project-more-inline-title">More<br />Data & AI</h3>
-              <div class="project-more-inline-icon">
+            <div class="about-social">
+              <a class="social-bubble" href="https://github.com/GouthamiN25" target="_blank" rel="noopener"
+                aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
-              </div>
-            </div>
-            <div class="project-more-inline-arrow">
-              <i class="fa-solid fa-chevron-right"></i>
-            </div>
-          </a>
-        </article>
-      </div>
-    </div>
+              </a>
 
-    <!-- ================= FULL STACK ================= -->
-    <div class="projects-section">
-      <h3 class="projects-subhead">
-        <i class="fa-solid fa-layer-group"></i>
-        Full Stack Projects
-      </h3>
+              <a class="social-bubble" href="https://www.linkedin.com/in/gouthami-nadupuri-14726455/" target="_blank"
+                rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
 
-      <div class="projects-grid">
-        <article class="project-card">
-          <!-- ✅ Add this image in assets/images/projects/govisha.png (or update path) -->
-          <img src="assets/images/projects/GOVISHA.jpg" alt="Govisha" class="project-image" />
-          <div class="project-body">
-            <h3>Govisha Studio</h3>
-            <p class="project-desc">
-              AI-powered fashion design assistant that turns garment descriptions into styled visual concepts.
-            </p>
-            <p class="project-tech"><strong>Tech:</strong> Web App, GenAI, Prompting, UI/UX</p>
-            <a href="https://github.com/GouthamiN25/GOVISHA" class="project-link" target="_blank" rel="noopener">
-              View Project
-            </a>
+              <a class="social-bubble" href="https://twitter.com/go250818" target="_blank" rel="noopener"
+                aria-label="X">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a class="social-bubble" href="mailto:gouthaminadupuri25@gmail.com" aria-label="Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </div>
           </div>
-        </article>
 
-        <article class="project-card">
-          <!-- ✅ Add this image in assets/images/projects/curiogalaxy.png (or update path) -->
-          <img src="assets/images/projects/CURIOGALAXY.jpg" alt="CurioGalaxy" class="project-image" />
-          <div class="project-body">
-            <h3>CurioGalaxy</h3>
-            <p class="project-desc">
-              Full-stack product platform idea: AI tools + content hub + user experience focused design.
-            </p>
-            <p class="project-tech"><strong>Tech:</strong> Full Stack, Frontend, Backend, APIs</p>
-            <a
-              href="https://github.com/GouthamiN25?tab=repositories&q=curiogalaxy&type=repositories"
-              class="project-link"
-              target="_blank"
-              rel="noopener"
-            >
-              View Project
-            </a>
-          </div>
-        </article>
-
-        <!-- Explore more Full Stack -->
-        <article class="project-card project-more-inline">
-          <a
-            href="https://github.com/GouthamiN25?tab=repositories&q=web&type=repositories"
-            target="_blank"
-            rel="noopener"
-            class="project-more-inline-link"
-            aria-label="Explore more Full Stack projects"
-          >
-            <div class="project-more-inline-content">
-              <h3 class="project-more-inline-title">More<br />Full Stack</h3>
-              <div class="project-more-inline-icon">
-                <i class="fa-brands fa-github"></i>
-              </div>
-            </div>
-            <div class="project-more-inline-arrow">
-              <i class="fa-solid fa-chevron-right"></i>
-            </div>
-          </a>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <!-- ================= COURSES ================= -->
-      <section id="courses" class="section">
-        <div class="panel">
-          <header class="panel-header text-center">
-            <h2>Courses & Certifications</h2>
-            <p class="panel-subtitle">
-              Snowflake · ClickHouse · Google Cloud · RAG &amp; Agentic AI
-            </p>
-          </header>
-
-          <div class="courses-grid">
-<article class="course-card"><h3>Snowflake SnowPro Core</h3><p class="course-meta">Snowflake</p></article>
-<article class="course-card"><h3>ClickHouse Certified Developer</h3><p class="course-meta">ClickHouse</p></article>
-            <!-- Keep the ones you already had -->
-            <article class="course-card">
-              <h3>Build, Train and Deploy ML Models with Keras on Google Cloud</h3>
-              <p class="course-meta">
-                Google · Issued Nov 2025 · Credential ID: 1ZWI23YHA5DE
-              </p>
-            </article>
-
-            <article class="course-card">
-              <h3>IBM RAG and Agentic AI: Build Next-Gen AI Systems Specialization</h3>
-              <p class="course-meta">
-                IBM · Issued Sep 2025 · Credential ID: TLSS7BYRYI9D
-              </p>
-            </article>
-
-            <article class="course-card">
-              <h3>Data Analytics in Google Cloud</h3>
-              <p class="course-meta">Google · Issued Jun 2024</p>
-            </article>
-
-            <article class="course-card">
-              <h3>Website on Google Cloud</h3>
-              <p class="course-meta">Google · Issued Jun 2024</p>
-            </article>
-
-            <article class="course-card">
-              <h3>Building No-Code Apps with AppSheet: Foundations</h3>
-              <p class="course-meta">Google · Issued May 2024 · Credential ID: 9151753</p>
-            </article>
-
-            <article class="course-card">
-              <h3>Introduction to Generative AI</h3>
-              <p class="course-meta">Google · Issued May 2024</p>
-            </article>
-
-            <article class="course-card">
-              <h3>Introduction to Large Language Models</h3>
-              <p class="course-meta">Google · Issued May 2024 · Credential ID: 9071711</p>
-            </article>
-
-            <article class="course-card">
-              <h3>Introduction to Prompt Engineering for Generative AI</h3>
-              <p class="course-meta">LinkedIn · Issued May 2024</p>
-            </article>
-
-            <article class="course-card">
-              <h3>Data Structures and Algorithms</h3>
-              <p class="course-meta">
-                Udemy · Issued May 2022 · Credential ID: UC-76db67ee-3429-4283-8660-766fdd6ddf6e
-              </p>
-            </article>
-
-            <article class="course-card">
-              <h3>Python Programming Masterclass</h3>
-              <p class="course-meta">
-                Udemy · Issued Jan 2022 · Credential ID: UC-2ca670af-01fa-45f9-9347-1dd822f00125
-              </p>
-            </article>
-
-            <!-- ✅ Add your LinkedIn certifications here (paste more <article class="course-card">...) -->
+          <div class="about-image">
+            <img class="profile-img" src="assets/images/about/p_img.jpg" alt="Gouthami Nadupuri" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ================= COMMUNITY ================= -->
-      <section id="community" class="section" aria-labelledby="community-title">
-        <div class="community-feature">
-          <div class="community-copy">
-            <p class="community-eyebrow">DEVELOPER COMMUNITY</p>
-            <div class="community-heading">
-              <img class="gdg-heading-logo" src="assets/logo/GDG_Bevy.jpg" alt="Google Developer Groups logo" width="72" height="72" />
-              <div><p class="community-kicker">GOOGLE DEVELOPER GROUPS</p><h2 id="community-title">Better together.</h2></div>
-            </div>
-            <p class="community-intro">Technology brings us together.<br>Community helps us grow.</p>
-            <p class="community-description">As a GDG Organizer, I help bring developers together through events, community activities, and workshops — creating opportunities to learn, share ideas, and connect.</p>
-            <p class="community-highlight">A space for curious minds, shared knowledge, and meaningful connections.</p>
-            <ul class="community-activities" aria-label="Community contributions">
-              <li><span class="activity-dot dot-blue" aria-hidden="true"></span>Developer events</li>
-              <li><span class="activity-dot dot-yellow" aria-hidden="true"></span>Workshops</li>
-              <li><span class="activity-dot dot-green" aria-hidden="true"></span>Community connection</li>
-            </ul>
-            <div class="community-links" aria-label="Community profiles and chapter">
-              <a class="community-cta" href="https://gdg.community.dev/gdg-san-francisco/" target="_blank" rel="noopener noreferrer">GDG San Francisco <span aria-hidden="true">↗</span></a>
-              <a class="community-profile-link" href="https://g.dev/gnadupuri" target="_blank" rel="noopener noreferrer">Google Developer Profile <span aria-hidden="true">↗</span></a>
-              <a class="community-profile-link" href="https://gdg.community.dev/u/m9uyax/#/about" target="_blank" rel="noopener noreferrer">My GDG Profile <span aria-hidden="true">↗</span></a>
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="section">
+      <div class="panel">
+        <header class="panel-header text-center">
+          <h2>Education</h2>
+        </header>
+
+        <!-- ✅ side-by-side -->
+        <article class="edu-card">
+
+          <div class="edu-logo-inline">
+            <img src="assets/logo/Uopsf.jpg" alt="University of the Pacific Logo" />
+          </div>
+
+          <div class="edu-main">
+            <h3>Master of Science in Data Science</h3>
+            <p class="edu-inst">University of the Pacific · San Francisco, USA</p>
+            <p class="edu-desc">
+              Python, SQL, Data Wrangling, Machine Learning, NLP, Data Engineering,
+              Statistics, Data Visualization.
+            </p>
+          </div>
+
+          <span class="edu-pill">Aug 2023 – May 2025</span>
+        </article>
+
+        <article class="edu-card">
+
+          <div class="edu-logo-inline">
+            <img src="assets/logo/gitam.jpg" alt="GITAM University Logo" />
+          </div>
+
+          <div class="edu-main">
+            <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+            <p class="edu-inst">GITAM University · Visakhapatnam, India</p>
+            <p class="edu-desc">
+              C, C++, Java, Data Structures, Web Technologies,
+              Artificial Intelligence, Software Engineering,
+              Operating Systems, Computer Networks.
+            </p>
+          </div>
+
+          <span class="edu-pill">Jul 2008 – May 2012</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE (TIMELINE) ================= -->
+    <section id="experience" class="section">
+      <div class="panel">
+        <header class="panel-header text-center">
+          <h2>Experience</h2>
+        </header>
+
+        <div class="timeline">
+          <div class="tl-item right">
+            <div class="tl-dot"></div>
+            <article class="tl-card">
+              <div class="tl-logo"><img src="assets/logo/growtharc_logo.jpg" alt="GrowthArc logo" loading="lazy" />
+              </div>
+              <div class="tl-content">
+                <div class="tl-top">
+                  <h3 class="tl-role">Data Engineer</h3><span class="tl-pill">Jun – Sep 2026 · Newark, CA</span>
+                </div>
+                <p class="tl-company">GrowthArc</p>
+                <ul class="tl-desc">
+                  <li>Built and productionized a cost intelligence platform using Snowflake, SQL, Python, React, and
+                    JavaScript, integrating real platform telemetry for compute, storage, governance, and query-cost
+                    analysis.</li>
+                  <li>Engineered SQL/Python pipelines and stored procedures using ACCOUNT_USAGE to calculate credit
+                    consumption, idle waste, utilization, query queuing, and disk spillage.</li>
+                  <li>Developed recommendations for warehouse right-sizing, auto-suspend, storage cleanup, and workload
+                    optimization. Built raw-to-analytics warehouse layers with Streams, Tasks, SCD Type 2, and
+                    dimensional modeling.</li>
+                  <li>Contributed to PostgreSQL-to-ClickHouse Cloud migration, including schema translation, data
+                    loading, validation, and performance checks.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="tl-item left">
+            <div class="tl-dot"></div>
+            <article class="tl-card">
+              <div class="tl-logo"><img src="assets/logo/Handshakeai.jpg" alt="Handshake AI logo" loading="lazy" />
+              </div>
+              <div class="tl-content">
+                <div class="tl-top">
+                  <h3 class="tl-role">AI Engineer</h3><span class="tl-pill">Mar – May 2026 · Remote</span>
+                </div>
+                <p class="tl-company">Handshake AI</p>
+                <ul class="tl-desc">
+                  <li>Evaluated multimodal AI outputs across text, image, and audio for correctness, reasoning,
+                    instruction following, visual consistency, and response quality.</li>
+                  <li>Built challenging evaluation tasks using real-world datasets to assess reasoning, data
+                    interpretation, reliability, and production-quality behavior. Ranked generated images against
+                    defined evaluation criteria.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="tl-item right">
+            <div class="tl-dot"></div>
+            <article class="tl-card">
+              <div class="tl-logo"><img src="assets/logo/symosis.jpg" alt="Symosis Security" /></div>
+              <div class="tl-content">
+                <div class="tl-top">
+                  <h3 class="tl-role">Data Scientist</h3><span class="tl-pill">Jul 2025 – Jan 2026 · Sunnyvale,
+                    CA</span>
+                </div>
+                <p class="tl-company">Symosis Security</p>
+                <ul class="tl-desc">
+                  <li>Cleaned, transformed, and explored data using Python, SQL, and Databricks for analytics and
+                    cybersecurity use cases.</li>
+                  <li>Collaborated on reusable analytics pipelines, datasets, and reporting workflows, and supported
+                    Tableau and Power BI dashboards.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="tl-item left">
+            <div class="tl-dot"></div>
+            <article class="tl-card">
+              <div class="tl-logo"><img src="assets/logo/vitech.jpg" alt="Vitech Systems Group" /></div>
+              <div class="tl-content">
+                <div class="tl-top">
+                  <h3 class="tl-role">Data Quality Analyst</h3><span class="tl-pill">Jan 2020 – Jun 2023 · Hyderabad,
+                    India</span>
+                </div>
+                <p class="tl-company">Vitech Systems Group</p>
+                <ul class="tl-desc">
+                  <li>Performed source-to-target validation and SQL quality checks across insurance, pension, and
+                    healthcare datasets.</li>
+                  <li>Investigated missing values, duplicates, mapping defects, and reconciliation issues. Developed
+                    repeatable validation checks and partnered with teams on root-cause analysis.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="tl-item right">
+            <div class="tl-dot"></div>
+            <article class="tl-card">
+              <div class="tl-logo"><img src="assets/logo/wipro.jpg" alt="Wipro" /></div>
+              <div class="tl-content">
+                <div class="tl-top">
+                  <h3 class="tl-role">Senior Data Associate · Google Project</h3><span class="tl-pill">Mar 2018 – Nov
+                    2019 · Hyderabad, India</span>
+                </div>
+                <p class="tl-company">Wipro</p>
+                <ul class="tl-desc">
+                  <li>Supported Google Trust &amp; Safety operations by reviewing high-volume datasets against policies
+                    and quality standards. Identified inaccurate or inconsistent information and collaborated with
+                    stakeholders to resolve discrepancies.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="tl-item left">
+            <div class="tl-dot"></div>
+            <article class="tl-card">
+              <div class="tl-logo"><img src="assets/logo/accenture.jpg" alt="Accenture" /></div>
+              <div class="tl-content">
+                <div class="tl-top">
+                  <h3 class="tl-role">Process Associate</h3><span class="tl-pill">Aug 2016 – Dec 2017 · Hyderabad,
+                    India</span>
+                </div>
+                <p class="tl-company">Accenture</p>
+                <ul class="tl-desc">
+                  <li>Reviewed and validated mapping, geospatial, and location data for an Uber Maps project.
+                    Investigated incomplete records using available data sources and defined business rules.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section">
+      <div class="panel">
+        <header class="panel-header text-center">
+          <h2>Projects</h2>
+          <p class="panel-subtitle">Data engineering, applied AI, and full stack products.</p>
+        </header>
+
+        <!-- ================= DATA & AI ================= -->
+        <div class="projects-section">
+          <h3 class="projects-subhead">
+            <i class="fa-solid fa-brain"></i>
+            Data & AI Projects
+          </h3>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <img src="assets/images/projects/cloud-cost.jpg"
+                alt="Cloud cost optimization illustration for the GrowthArc platform"
+                class="project-image project-image-full" loading="lazy" />
+              <div class="project-body">
+                <h3>GrowthArc Cost Intelligence &amp; Optimization Platform</h3>
+                <p class="project-desc">Integrated ACCOUNT_USAGE telemetry, SQL/Python pipelines, and stored procedures
+                  to analyze credit consumption, idle waste, storage, query queuing, and disk spillage. Developed
+                  recommendations for warehouse sizing and workload optimization.</p>
+                <p class="project-tech"><strong>Tech:</strong> Snowflake, SQL, Python, React</p>
+                <p class="project-desc">Professional project · GrowthArc</p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/images/projects/CMA.jpg"
+                alt="Database migration diagram showing data moving through clickhouse-local to ClickHouse Cloud"
+                class="project-image project-image-full" loading="lazy" />
+              <div class="project-body">
+                <h3>ClickHouse Migration Accelerator</h3>
+                <p class="project-desc">Contributed schema translation, automated data loading, validation, and
+                  troubleshooting for ClickHouse Cloud migrations. Verified completeness and schema compatibility
+                  through source-to-target and post-migration checks.</p>
+                <p class="project-tech">
+                  <strong>Tech:</strong> ClickHouse, PostgreSQL, FastAPI
+                </p>
+                <p class="project-desc">Professional project · GrowthArc</p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/images/projects/AgentEval.jpg" alt="Time Series" class="project-image" />
+              <div class="project-body">
+                <h3>AgentEval</h3>
+                <p class="project-desc">Developed evaluation workflows to assess agent behavior, response quality, and
+                  reliability. Structured testing and comparison of AI-agent outputs beyond traditional model metrics.
+                </p>
+                <p class="project-tech"><strong>Tech:</strong> AI agents, LLM evaluation, Agentic AI</p>
+                <p class="project-desc">AI agent evaluation project</p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/images/projects/tim.jpg" alt="Time Series" class="project-image" />
+              <div class="project-body">
+                <h3>Time Series Forecasting</h3>
+                <p class="project-desc">
+                  End-to-end sales forecasting using ARIMA/SARIMA, ML models, and LSTM to capture complex temporal
+                  patterns.
+                </p>
+                <p class="project-tech"><strong>Tech:</strong> ARIMA, SARIMA, Python, TensorFlow</p>
+                <a href="https://github.com/GouthamiN25/Time-Series-Forecasting" class="project-link" target="_blank"
+                  rel="noopener">
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/images/projects/Storybloom.jpg" alt="StoryBloom – Multimodal AI Storytelling"
+                class="project-image" loading="lazy" />
+
+              <div class="project-body">
+                <h3>StoryBloom – Multimodal AI Storytelling</h3>
+
+                <p class="project-desc">
+                  Built an interactive AI storytelling experience that generates personalized
+                  story scenes and supports multimodal, voice-driven interaction through a
+                  modern full-stack architecture.
+                </p>
+
+                <p class="project-tech">
+                  <strong>Tech:</strong> Gemini, Google GenAI SDK, FastAPI, Next.js,
+                  React, WebSockets, Google Cloud Run
+                </p>
+
+                <a href="https://github.com/GouthamiN25/StoryBloom" class="project-link" target="_blank" rel="noopener">
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/images/projects/cyber-sentinal.png" alt="CyberAI Sentinel" class="project-image" />
+              <div class="project-body">
+                <h3>CyberAI Sentinel – ML + RAG Cyber Analytics</h3>
+                <p class="project-desc">
+                  AI cybersecurity pipeline combining machine-learning threat scoring, behavioral analytics, semantic
+                  retrieval, and RAG. Uses Sentence Transformers and Streamlit to surface threat context for incident
+                  investigations.
+                </p>
+                <p class="project-tech"><strong>Tech:</strong> Python, Scikit-learn, RAG, Sentence Transformers,
+                  Streamlit</p>
+                <a href="https://github.com/GouthamiN25/CyberAI-Sentinel-ML-RAG-Pipeline" class="project-link"
+                  target="_blank" rel="noopener">
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/images/projects/stocks.jpg" alt="Stock Market LLM" class="project-image" />
+              <div class="project-body">
+                <h3>Stock Market LLM Assistant</h3>
+                <p class="project-desc">
+                  Transformer experiments to generate summaries and insights from finance-related text.
+                </p>
+                <p class="project-tech"><strong>Tech:</strong> Transformers, Pandas</p>
+                <a href="https://github.com/GouthamiN25/Stock-Market-LLM" class="project-link" target="_blank"
+                  rel="noopener">
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/images/projects/cart-pole.png" alt="Deep Q-Learning Agent for CartPole"
+                class="project-image" />
+              <div class="project-body">
+                <h3>Deep Q-Learning Agent for CartPole</h3>
+                <p class="project-desc">Reinforcement learning DQN agent with training workflow.</p>
+                <p class="project-tech"><strong>Tech:</strong> Python, Reinforcement Learning</p>
+                <a href="https://github.com/GouthamiN25/Deep-Q-Learning-Agent-for-CartPole" class="project-link"
+                  target="_blank" rel="noopener">
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <!-- Explore more AI/Data -->
+            <article class="project-card project-more-inline">
+              <a href="https://github.com/GouthamiN25?tab=repositories&q=rag&type=repositories" target="_blank"
+                rel="noopener" class="project-more-inline-link" aria-label="Explore more Data & AI projects">
+                <div class="project-more-inline-content">
+                  <h3 class="project-more-inline-title">More<br />Data & AI</h3>
+                  <div class="project-more-inline-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                </div>
+                <div class="project-more-inline-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <!-- ================= FULL STACK ================= -->
+        <div class="projects-section">
+          <h3 class="projects-subhead">
+            <i class="fa-solid fa-layer-group"></i>
+            Full Stack Projects
+          </h3>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <!-- ✅ Add this image in assets/images/projects/govisha.png (or update path) -->
+              <img src="assets/images/projects/GOVISHA.jpg" alt="Govisha" class="project-image" />
+              <div class="project-body">
+                <h3>Govisha Studio</h3>
+                <p class="project-desc">
+                  AI-powered fashion design assistant that turns garment descriptions into styled visual concepts.
+                </p>
+                <p class="project-tech"><strong>Tech:</strong> Web App, GenAI, Prompting, UI/UX</p>
+                <a href="https://github.com/GouthamiN25/GOVISHA" class="project-link" target="_blank" rel="noopener">
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <!-- ✅ Add this image in assets/images/projects/curiogalaxy.png (or update path) -->
+              <img src="assets/images/projects/CURIOGALAXY.jpg" alt="CurioGalaxy" class="project-image" />
+              <div class="project-body">
+                <h3>CurioGalaxy</h3>
+                <p class="project-desc">
+                  Full-stack product platform idea: AI tools + content hub + user experience focused design.
+                </p>
+                <p class="project-tech"><strong>Tech:</strong> Full Stack, Frontend, Backend, APIs</p>
+                <a href="https://github.com/GouthamiN25?tab=repositories&q=curiogalaxy&type=repositories"
+                  class="project-link" target="_blank" rel="noopener">
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <!-- Explore more Full Stack -->
+            <article class="project-card project-more-inline">
+              <a href="https://github.com/GouthamiN25?tab=repositories&q=web&type=repositories" target="_blank"
+                rel="noopener" class="project-more-inline-link" aria-label="Explore more Full Stack projects">
+                <div class="project-more-inline-content">
+                  <h3 class="project-more-inline-title">More<br />Full Stack</h3>
+                  <div class="project-more-inline-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                </div>
+                <div class="project-more-inline-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COURSES ================= -->
+    <section id="courses" class="section">
+      <div class="panel">
+        <header class="panel-header text-center">
+          <h2>Courses & Certifications</h2>
+          <p class="panel-subtitle">
+            Snowflake · ClickHouse · Google Cloud · RAG &amp; Agentic AI
+          </p>
+        </header>
+
+        <div class="courses-grid">
+          <article class="course-card">
+            <h3>Snowflake SnowPro Core</h3>
+            <p class="course-meta">Snowflake</p>
+          </article>
+          <article class="course-card">
+            <h3>ClickHouse Certified Developer</h3>
+            <p class="course-meta">ClickHouse</p>
+          </article>
+          <!-- Keep the ones you already had -->
+          <article class="course-card">
+            <h3>Build, Train and Deploy ML Models with Keras on Google Cloud</h3>
+            <p class="course-meta">
+              Google · Issued Nov 2025 · Credential ID: 1ZWI23YHA5DE
+            </p>
+          </article>
+
+          <article class="course-card">
+            <h3>IBM RAG and Agentic AI: Build Next-Gen AI Systems Specialization</h3>
+            <p class="course-meta">
+              IBM · Issued Sep 2025 · Credential ID: TLSS7BYRYI9D
+            </p>
+          </article>
+
+          <article class="course-card">
+            <h3>Data Analytics in Google Cloud</h3>
+            <p class="course-meta">Google · Issued Jun 2024</p>
+          </article>
+
+          <article class="course-card">
+            <h3>Website on Google Cloud</h3>
+            <p class="course-meta">Google · Issued Jun 2024</p>
+          </article>
+
+          <article class="course-card">
+            <h3>Building No-Code Apps with AppSheet: Foundations</h3>
+            <p class="course-meta">Google · Issued May 2024 · Credential ID: 9151753</p>
+          </article>
+
+          <article class="course-card">
+            <h3>Introduction to Generative AI</h3>
+            <p class="course-meta">Google · Issued May 2024</p>
+          </article>
+
+          <article class="course-card">
+            <h3>Introduction to Large Language Models</h3>
+            <p class="course-meta">Google · Issued May 2024 · Credential ID: 9071711</p>
+          </article>
+
+          <article class="course-card">
+            <h3>Introduction to Prompt Engineering for Generative AI</h3>
+            <p class="course-meta">LinkedIn · Issued May 2024</p>
+          </article>
+
+          <article class="course-card">
+            <h3>Data Structures and Algorithms</h3>
+            <p class="course-meta">
+              Udemy · Issued May 2022 · Credential ID: UC-76db67ee-3429-4283-8660-766fdd6ddf6e
+            </p>
+          </article>
+
+          <article class="course-card">
+            <h3>Python Programming Masterclass</h3>
+            <p class="course-meta">
+              Udemy · Issued Jan 2022 · Credential ID: UC-2ca670af-01fa-45f9-9347-1dd822f00125
+            </p>
+          </article>
+
+          <!-- ✅ Add your LinkedIn certifications here (paste more <article class="course-card">...) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMMUNITY ================= -->
+    <section id="community" class="section" aria-labelledby="community-title">
+      <div class="community-feature">
+        <div class="community-copy">
+          <p class="community-eyebrow">DEVELOPER COMMUNITY</p>
+          <div class="community-heading">
+            <img class="gdg-heading-logo" src="assets/logo/GDG_Bevy.jpg" alt="Google Developer Groups logo" width="72"
+              height="72" />
+            <div>
+              <p class="community-kicker">GOOGLE DEVELOPER GROUPS</p>
+              <h2 id="community-title">Better together.</h2>
             </div>
           </div>
-          <aside class="organizer-card" aria-label="Gouthami Nadupuri, GDG Organizer">
-            <img class="gdg-organizer-logo" src="assets/logo/GDG_Bevy.jpg" alt="Google Developer Groups logo" width="165" height="165" />
-            <span class="organizer-badge">GDG ORGANIZER</span>
+          <p class="community-intro">Technology brings us together.<br>Community helps us grow.</p>
+          <p class="community-description">As a GDG Organizer, I help bring developers together through events,
+            community activities, and workshops — creating opportunities to learn, share ideas, and connect.</p>
+          <p class="community-highlight">A space for curious minds, shared knowledge, and meaningful connections.</p>
+          <ul class="community-activities" aria-label="Community contributions">
+            <li><span class="activity-dot dot-blue" aria-hidden="true"></span>Developer events</li>
+            <li><span class="activity-dot dot-yellow" aria-hidden="true"></span>Workshops</li>
+            <li><span class="activity-dot dot-green" aria-hidden="true"></span>Community connection</li>
+          </ul>
+          <div class="community-links" aria-label="Community profiles and chapter">
+            <a class="community-cta" href="https://gdg.community.dev/gdg-san-francisco/" target="_blank"
+              rel="noopener noreferrer">GDG San Francisco <span aria-hidden="true">↗</span></a>
+            <a class="community-profile-link" href="https://g.dev/gnadupuri" target="_blank"
+              rel="noopener noreferrer">Google Developer Profile <span aria-hidden="true">↗</span></a>
+            <a class="community-profile-link" href="https://gdg.community.dev/u/m9uyax/#/about" target="_blank"
+              rel="noopener noreferrer">My GDG Profile <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="organizer-card" aria-label="Gouthami Nadupuri, GDG Organizer">
+          <img class="gdg-organizer-logo" src="assets/logo/GDG_Bevy.jpg" alt="Google Developer Groups logo" width="165"
+            height="165" />
+          <span class="organizer-badge">GDG ORGANIZER</span>
+          <h3>Gouthami Nadupuri</h3>
+          <p class="organizer-caption">Connecting people.<br>Sharing what we learn.</p>
+          <div class="organizer-footer">
+            <div><strong>Building community</strong><span><span class="activity-dot dot-green"
+                  aria-hidden="true"></span>LEARN · SHARE · CONNECT</span></div>
+            <div class="community-colors" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="skills-head">
+          <h2 class="skills-title">Skills</h2>
+        </div>
+
+        <div class="skills-grid-v2">
+          <article class="skill-card-v2">
+            <div class="skill-card-head">
+              <div class="skill-ico"><i class="fa-solid fa-check"></i></div>
+              <h3>Programming</h3>
+            </div>
+            <div class="chips-v2"><span class="chip-v2">Python</span><span class="chip-v2">SQL</span><span
+                class="chip-v2">JavaScript</span></div>
+          </article>
+          <article class="skill-card-v2">
+            <div class="skill-card-head">
+              <div class="skill-ico"><i class="fa-solid fa-check"></i></div>
+              <h3>Data platforms</h3>
+            </div>
+            <div class="chips-v2"><span class="chip-v2">Snowflake</span><span class="chip-v2">ClickHouse</span><span
+                class="chip-v2">PostgreSQL</span><span class="chip-v2">MySQL</span><span class="chip-v2">BigQuery</span>
+            </div>
+          </article>
+          <article class="skill-card-v2">
+            <div class="skill-card-head">
+              <div class="skill-ico"><i class="fa-solid fa-check"></i></div>
+              <h3>Data engineering</h3>
+            </div>
+            <div class="chips-v2"><span class="chip-v2">ETL / ELT</span><span class="chip-v2">Data pipelines</span><span
+                class="chip-v2">Data warehousing</span><span class="chip-v2">Data modeling</span><span
+                class="chip-v2">CDC</span><span class="chip-v2">SCD Type 2</span><span class="chip-v2">Data
+                migration</span><span class="chip-v2">Data quality &amp; governance</span></div>
+          </article>
+          <article class="skill-card-v2">
+            <div class="skill-card-head">
+              <div class="skill-ico"><i class="fa-solid fa-check"></i></div>
+              <h3>AI &amp; analytics</h3>
+            </div>
+            <div class="chips-v2"><span class="chip-v2">Machine learning</span><span
+                class="chip-v2">Scikit-learn</span><span class="chip-v2">Pandas</span><span
+                class="chip-v2">Keras</span><span class="chip-v2">NLP</span><span class="chip-v2">LLMs</span><span
+                class="chip-v2">RAG</span><span class="chip-v2">Agentic AI</span><span class="chip-v2">Multimodal AI
+                evaluation</span></div>
+          </article>
+          <article class="skill-card-v2">
+            <div class="skill-card-head">
+              <div class="skill-ico"><i class="fa-solid fa-check"></i></div>
+              <h3>Cloud &amp; development</h3>
+            </div>
+            <div class="chips-v2"><span class="chip-v2">GCP</span><span class="chip-v2">AWS</span><span
+                class="chip-v2">React</span><span class="chip-v2">FastAPI</span><span class="chip-v2">Flask</span><span
+                class="chip-v2">dbt</span><span class="chip-v2">Docker</span><span class="chip-v2">Git / GitHub</span>
+            </div>
+          </article>
+          <article class="skill-card-v2">
+            <div class="skill-card-head">
+              <div class="skill-ico"><i class="fa-solid fa-check"></i></div>
+              <h3>Business intelligence</h3>
+            </div>
+            <div class="chips-v2"><span class="chip-v2">Tableau</span><span class="chip-v2">Power BI</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section">
+      <div class="panel panel-cta">
+        <header class="panel-header text-center">
+          <h2>Get in Touch</h2>
+          <p class="panel-subtitle">
+            Open to roles and collaborations in data engineering, data platforms, analytics, and applied AI.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-form-wrapper">
+            <form id="contactForm">
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="#" />
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Name*</label>
+                  <input type="text" id="name" name="name" required placeholder="Your name" />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email*</label>
+                  <input type="email" id="email" name="email" required placeholder="you@example.com" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="How can I help?" />
+              </div>
+
+              <div class="form-field">
+                <label for="comment">Message*</label>
+                <textarea id="comment" name="message" rows="5" required
+                  placeholder="Share a bit about your project, role, or idea."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary contact-btn">Let’s Connect</button>
+              <p id="successMessage" class="success-message" role="status" hidden>✅ Message sent successfully!</p>
+            </form>
+          </div>
+
+          <div class="contact-info">
             <h3>Gouthami Nadupuri</h3>
-            <p class="organizer-caption">Connecting people.<br>Sharing what we learn.</p>
-            <div class="organizer-footer"><div><strong>Building community</strong><span><span class="activity-dot dot-green" aria-hidden="true"></span>LEARN · SHARE · CONNECT</span></div><div class="community-colors" aria-hidden="true"><span></span><span></span><span></span><span></span></div></div>
-          </aside>
-        </div>
-      </section>
-
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="skills">
-  <div class="container">
-    <div class="skills-head">
-      <h2 class="skills-title">Skills</h2>
-    </div>
-
-<div class="skills-grid-v2"><article class="skill-card-v2"><div class="skill-card-head"><div class="skill-ico"><i class="fa-solid fa-check"></i></div><h3>Programming</h3></div><div class="chips-v2"><span class="chip-v2">Python</span><span class="chip-v2">SQL</span><span class="chip-v2">JavaScript</span></div></article><article class="skill-card-v2"><div class="skill-card-head"><div class="skill-ico"><i class="fa-solid fa-check"></i></div><h3>Data platforms</h3></div><div class="chips-v2"><span class="chip-v2">Snowflake</span><span class="chip-v2">ClickHouse</span><span class="chip-v2">PostgreSQL</span><span class="chip-v2">MySQL</span><span class="chip-v2">BigQuery</span></div></article><article class="skill-card-v2"><div class="skill-card-head"><div class="skill-ico"><i class="fa-solid fa-check"></i></div><h3>Data engineering</h3></div><div class="chips-v2"><span class="chip-v2">ETL / ELT</span><span class="chip-v2">Data pipelines</span><span class="chip-v2">Data warehousing</span><span class="chip-v2">Data modeling</span><span class="chip-v2">CDC</span><span class="chip-v2">SCD Type 2</span><span class="chip-v2">Data migration</span><span class="chip-v2">Data quality &amp; governance</span></div></article><article class="skill-card-v2"><div class="skill-card-head"><div class="skill-ico"><i class="fa-solid fa-check"></i></div><h3>AI &amp; analytics</h3></div><div class="chips-v2"><span class="chip-v2">Machine learning</span><span class="chip-v2">Scikit-learn</span><span class="chip-v2">Pandas</span><span class="chip-v2">Keras</span><span class="chip-v2">NLP</span><span class="chip-v2">LLMs</span><span class="chip-v2">RAG</span><span class="chip-v2">Agentic AI</span><span class="chip-v2">Multimodal AI evaluation</span></div></article><article class="skill-card-v2"><div class="skill-card-head"><div class="skill-ico"><i class="fa-solid fa-check"></i></div><h3>Cloud &amp; development</h3></div><div class="chips-v2"><span class="chip-v2">GCP</span><span class="chip-v2">AWS</span><span class="chip-v2">React</span><span class="chip-v2">FastAPI</span><span class="chip-v2">Flask</span><span class="chip-v2">dbt</span><span class="chip-v2">Docker</span><span class="chip-v2">Git / GitHub</span></div></article><article class="skill-card-v2"><div class="skill-card-head"><div class="skill-ico"><i class="fa-solid fa-check"></i></div><h3>Business intelligence</h3></div><div class="chips-v2"><span class="chip-v2">Tableau</span><span class="chip-v2">Power BI</span></div></article></div></div></section>
-      <!-- ================= CONTACT ================= -->
-      <section id="contact" class="section">
-        <div class="panel panel-cta">
-          <header class="panel-header text-center">
-            <h2>Get in Touch</h2>
-            <p class="panel-subtitle">
-              Open to roles and collaborations in data engineering, data platforms, analytics, and applied AI.
-            </p>
-          </header>
-
-          <div class="contact-grid">
-            <div class="contact-form-wrapper">
-              <form id="contactForm">
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="#" />
-
-                <div class="form-row">
-                  <div class="form-field">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required placeholder="Your name" />
-                  </div>
-                  <div class="form-field">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required placeholder="you@example.com" />
-                  </div>
-                </div>
-
-                <div class="form-field">
-                  <label for="subject">Subject</label>
-                  <input type="text" id="subject" name="subject" placeholder="How can I help?" />
-                </div>
-
-                <div class="form-field">
-                  <label for="comment">Message*</label>
-                  <textarea id="comment" name="message" rows="5" required placeholder="Share a bit about your project, role, or idea."></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary contact-btn">Let’s Connect</button>
-                <p id="successMessage" class="success-message" role="status" hidden>✅ Message sent successfully!</p>
-              </form>
+            <p class="contact-role">Data &amp; AI Engineer</p>
+            <div class="contact-lines">
+              <p><strong>📞</strong> +1 341-356-3732</p>
+              <p><strong>📧</strong> gouthaminadupuri25@gmail.com</p>
+              <p><strong><i class="fa fa-globe"></i></strong> CurioGalaxy.com</p>
             </div>
 
-            <div class="contact-info">
-              <h3>Gouthami Nadupuri</h3>
-              <p class="contact-role">Data &amp; AI Engineer</p>
-              <div class="contact-lines">
-                <p><strong>📞</strong> +1 341-356-3732</p>
-                <p><strong>📧</strong> gouthaminadupuri25@gmail.com</p>
-                <p><strong><i class="fa fa-globe"></i></strong> CurioGalaxy.com</p>
-              </div>
-
-              <div class="contact-social">
-                <a href="https://github.com/GouthamiN25" target="_blank" aria-label="GitHub">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/gouthami-nadupuri-14726455/" target="_blank" aria-label="LinkedIn">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://twitter.com/go250818" target="_blank" aria-label="Twitter">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a href="mailto:gouthaminadupuri25@gmail.com" aria-label="Email">
-                  <i class="fa-regular fa-envelope"></i>
-                </a>
-              </div>
+            <div class="contact-social">
+              <a href="https://github.com/GouthamiN25" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/gouthami-nadupuri-14726455/" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://twitter.com/go250818" target="_blank" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="mailto:gouthaminadupuri25@gmail.com" aria-label="Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="site-footer">
-      <p>© Designed &amp; Developed by Gouthami Nadupuri · All Rights Reserved</p>
-    </footer>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <p>© Designed &amp; Developed by Gouthami Nadupuri · All Rights Reserved</p>
+  </footer>
 
-    <!-- Contact Form Script -->
-    <script>
-      document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault();
-        document.getElementById("successMessage").hidden = true;
-        const formData = new FormData(this);
+  <!-- Contact Form Script -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      document.getElementById("successMessage").hidden = true;
+      const formData = new FormData(this);
 
-        fetch("https://formsubmit.co/gouthaminadupuri25@gmail.com", {
-          method: "POST",
-          body: formData,
+      fetch("https://formsubmit.co/gouthaminadupuri25@gmail.com", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          if (response.ok) {
+            document.getElementById("successMessage").hidden = false;
+            document.getElementById("successMessage").style.display = "block";
+            this.reset();
+          } else {
+            alert("Error sending message. Please try again.");
+          }
         })
-          .then((response) => {
-            if (response.ok) {
-              document.getElementById("successMessage").hidden = false;
-              document.getElementById("successMessage").style.display = "block";
-              this.reset();
-            } else {
-              alert("Error sending message. Please try again.");
-            }
-          })
-          .catch((error) => {
-            alert("Error: " + error);
-          });
-      });
-    </script>
-    
-    
-    <script src="assets/js/main.js"></script>
-  </body>
+        .catch((error) => {
+          alert("Error: " + error);
+        });
+    });
+  </script>
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
