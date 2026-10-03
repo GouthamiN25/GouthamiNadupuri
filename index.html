@@ -24,7 +24,68 @@
     <meta name="description" content="Gouthami Nadupuri, Data &amp; AI Engineer specializing in Snowflake, ClickHouse, data platforms, cost intelligence, and applied AI." />
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/resume-updates.css" />
+  <!-- Keep update styles with this HTML so publishing index.html includes them. -->
+  <style id="portfolio-update-styles">
+.company-initials{display:grid;place-items:center;width:100%;height:100%;min-height:48px;font-weight:700;color:var(--text,#25334a)}
+.project-placeholder{display:grid;place-items:center;background:linear-gradient(135deg,#dce9f4,#ebe5f5);font-size:52px;color:#465d80}
+.tl-desc{padding-left:18px}.tl-desc li+li{margin-top:10px}
+[hidden]{display:none!important}
+.mobile-menu-toggle{display:none}
+a:focus-visible,button:focus-visible{outline:3px solid #5485d6;outline-offset:4px}
+@media(max-width:780px){
+.mobile-menu-toggle{display:block;background:transparent;color:inherit;border:1px solid currentColor;border-radius:8px;padding:8px 12px;cursor:pointer}
+.nav-links.is-open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:16px 24px;background:#fff;box-shadow:0 8px 15px #0002;max-height:75vh;overflow:auto}
+body[data-theme="dark"] .nav-links.is-open{background:#111827}
+.nav-links.is-open a{padding:8px 0}
+.tl-top,.tl-content{min-width:0}.tl-pill{white-space:normal}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+.edu-card+.edu-card{margin-top:20px}
+@media(max-width:640px){.edu-card{flex-direction:column;padding:20px}.edu-logo-inline{position:static}.edu-pill{white-space:normal}.projects-grid{grid-template-columns:minmax(0,1fr)}.tl-card{grid-template-columns:minmax(0,1fr)}.tl-logo{width:56px;height:56px}}
+
+/* Preserve the full supplied project images without cropping. */
+.project-image-full{object-fit:contain;background:#f4f4f4}
+
+/* Community feature inspired by the supplied GDG reference. */
+.community-feature{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:54px;align-items:center;max-width:1120px;margin:0 auto;padding:60px 48px;background:#090b0e;border:1px solid #252635;border-radius:30px;color:#f7f8fc;font-family:Arial,Helvetica,sans-serif;box-shadow:0 24px 50px #0002}
+.community-eyebrow{font-size:10px;font-weight:700;letter-spacing:2.4px;color:#a8afc0;margin:0 0 30px}
+.community-heading{display:flex;align-items:center;gap:22px;margin-bottom:28px}
+.community-kicker{font-size:11px;letter-spacing:1.8px;font-weight:700;color:#d1d4dd;margin:0 0 9px}
+.community-feature h2{color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:clamp(30px,3.3vw,46px);line-height:1.1;letter-spacing:-1.5px}
+.community-mark{width:72px;height:58px;position:relative;flex-shrink:0}
+.community-mark span{position:absolute;width:37px;height:16px;border-radius:10px}
+.community-mark span:nth-child(1){background:#ea4335;top:12px;left:0;transform:rotate(-36deg)}
+.community-mark span:nth-child(2){background:#4285f4;top:30px;left:0;transform:rotate(36deg)}
+.community-mark span:nth-child(3){background:#34a853;top:12px;right:0;transform:rotate(36deg);z-index:1}
+.community-mark span:nth-child(4){background:#fbbc04;top:30px;right:0;transform:rotate(-36deg)}
+.community-intro{font-size:22px;line-height:1.5;font-weight:600;color:#f4f5fa;margin:0 0 18px}
+.community-description{font-size:15px;line-height:1.85;color:#c0c4cf;margin:0 0 22px}
+.community-highlight{color:#66ddec;font-size:16px;line-height:1.6;font-weight:600;margin:0 0 26px}
+.community-activities{display:flex;gap:10px;flex-wrap:wrap;list-style:none;padding:0;margin:0 0 30px}
+.community-activities li{display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid #303145;border-radius:30px;background:#191a29;font-size:11px;color:#dce0ea}
+.activity-dot{display:inline-block;width:7px;height:7px;border-radius:50%;flex-shrink:0}.dot-blue{background:#4285f4}.dot-yellow{background:#fbbc04}.dot-green{background:#34a853}
+.community-cta{display:inline-flex;align-items:center;gap:30px;background:#4285f4;color:white;border:1px solid #4285f4;border-radius:30px;padding:15px 25px;font-size:14px;font-weight:700;transition:background .2s,transform .2s}.community-cta:hover{background:#2869d3;transform:translateY(-2px)}.community-cta span{font-size:22px;line-height:1}
+.organizer-card{padding:34px 20px 20px;border:1px solid #2b2d43;border-radius:28px;background:radial-gradient(ellipse at 50% 15%,#1a2031 0%,#0e101b 65%);text-align:center}
+.organizer-orbit{width:165px;height:165px;border:5px solid #f6f7fb;border-radius:50%;margin:0 auto 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#191f1c;color:#60cf77}
+.orbit-code{font-size:38px;line-height:1;font-family:monospace;font-weight:700}.orbit-globe{width:58px;height:58px;color:#65b271}
+.organizer-badge{display:inline-block;color:#54d7ee;background:#191b2c;border:1px solid #33344c;padding:7px 15px;border-radius:30px;font-size:10px;font-weight:700;letter-spacing:1.6px}
+.community-feature .organizer-card h3{color:#f7f8fc;font:600 20px/1.3 Arial,Helvetica,sans-serif;margin:20px 0 10px}
+.organizer-caption{color:#acb3c6;font-size:13px;line-height:1.6;margin:0 0 26px}
+.organizer-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:left;background:#1a1b2d;border:1px solid #303149;border-radius:15px;padding:18px 14px}
+.organizer-footer strong{display:block;font-size:14px;color:#f8f8fc;margin-bottom:9px}.organizer-footer div>span{display:flex;align-items:center;gap:7px;font-size:8px;font-weight:600;letter-spacing:.7px;color:#c9ceda}
+.community-colors{display:flex;flex-shrink:0}.community-colors span{width:11px;height:11px;border:1px solid #1a1b2d;border-radius:50%;margin-left:-2px;background:#4285f4}.community-colors span:nth-child(2){background:#ea4335}.community-colors span:nth-child(3){background:#fbbc04}.community-colors span:nth-child(4){background:#34a853}
+@media(max-width:980px){.community-feature{gap:30px;padding:40px 28px;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}.community-heading{gap:14px}.community-mark{width:60px}.community-mark span{width:32px}}
+@media(max-width:700px){.community-feature{grid-template-columns:minmax(0,1fr);padding:32px 22px;gap:32px}.community-heading{align-items:flex-start}.community-feature h2{font-size:32px}.community-kicker{font-size:9px;letter-spacing:1px}.community-intro{font-size:20px}.organizer-card{width:100%;max-width:370px;justify-self:center}.community-description{font-size:14px}.community-activities{gap:8px}.community-eyebrow{font-size:9px}}
+
+.community-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.community-profile-link{display:inline-flex;align-items:center;gap:12px;padding:12px 16px;border:1px solid #41465d;border-radius:28px;color:#e1e6f2;font-size:12px;font-weight:600;line-height:1.5}
+.community-profile-link:hover{background:#202438;color:#fff;border-color:#688bc3}
+
+/* Supplied GDG logo, displayed without cropping or alteration. */
+.gdg-heading-logo{display:block;width:72px;height:72px;object-fit:contain;border-radius:12px;flex-shrink:0}
+.gdg-organizer-logo{display:block;width:165px;height:165px;object-fit:contain;border-radius:20px;margin:0 auto 24px}
+@media(max-width:700px){.gdg-heading-logo{width:60px;height:60px}}
+  </style>
   </head>
 
   <body>
@@ -458,7 +519,7 @@
           <div class="community-copy">
             <p class="community-eyebrow">DEVELOPER COMMUNITY</p>
             <div class="community-heading">
-              <div class="community-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <img class="gdg-heading-logo" src="assets/logo/GDG_Bevy.jpg" alt="Google Developer Groups logo" width="72" height="72" />
               <div><p class="community-kicker">GOOGLE DEVELOPER GROUPS</p><h2 id="community-title">Better together.</h2></div>
             </div>
             <p class="community-intro">Technology brings us together.<br>Community helps us grow.</p>
@@ -476,7 +537,7 @@
             </div>
           </div>
           <aside class="organizer-card" aria-label="Gouthami Nadupuri, GDG Organizer">
-            <div class="organizer-orbit" aria-hidden="true"><span class="orbit-code">&lt; &gt;</span><svg class="orbit-globe" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="43"/><ellipse cx="50" cy="50" rx="20" ry="43"/><path d="M7 50h86M14 27h72M14 73h72"/></svg></div>
+            <img class="gdg-organizer-logo" src="assets/logo/GDG_Bevy.jpg" alt="Google Developer Groups logo" width="165" height="165" />
             <span class="organizer-badge">GDG ORGANIZER</span>
             <h3>Gouthami Nadupuri</h3>
             <p class="organizer-caption">Connecting people.<br>Sharing what we learn.</p>
