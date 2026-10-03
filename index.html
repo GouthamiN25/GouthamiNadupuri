@@ -139,6 +139,17 @@ body,.site-header,main,.section,.hero,.panel,.skills,.skills>.container,.site-fo
 .profile-img{width:240px;max-width:100%;height:270px;max-height:none;object-fit:cover;object-position:center top}
 @media(max-width:700px){.profile-img{width:150px;height:170px;object-position:center top}}
 
+/* Keep project cards aligned and reserve space for the explore-card arrow. */
+#projects .project-card{min-width:0}
+#projects .project-image{flex-shrink:0}
+#projects .project-body{display:flex;flex-direction:column;flex:1;min-width:0;overflow-wrap:anywhere}
+#projects .project-link{align-self:flex-start;margin-top:auto}
+#projects .project-more-inline-link{flex:1;height:auto;min-height:180px;gap:16px;justify-content:space-between}
+#projects .project-more-inline-content{flex:1;min-width:0}
+#projects .project-more-inline-arrow{position:static;flex-shrink:0;transform:none}
+#projects .project-more-inline:hover .project-more-inline-arrow{transform:translateX(4px)}
+@media(max-width:640px){#projects .projects-grid{grid-template-columns:minmax(0,1fr)}}
+
   </style>
   </head>
 
@@ -335,14 +346,11 @@ body,.site-header,main,.section,.hero,.panel,.skills,.skills>.container,.site-fo
         </article>
 
         <article class="project-card">
-  <div class="project-image project-placeholder" aria-hidden="true">
-    <i class="fa-solid fa-book-open"></i>
-  </div>
-          
-<article class="project-card">
-  <img src="assets/images/projects/Storybloom.jpg" alt="CyberAI Sentinel" class="project-image" />
+  <img src="assets/images/projects/Storybloom.jpg" alt="StoryBloom – Multimodal AI Storytelling" class="project-image" loading="lazy" />
+
   <div class="project-body">
     <h3>StoryBloom – Multimodal AI Storytelling</h3>
+
     <p class="project-desc">
       Built an interactive AI storytelling experience that generates personalized
       story scenes and supports multimodal, voice-driven interaction through a
