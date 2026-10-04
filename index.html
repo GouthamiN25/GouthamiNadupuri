@@ -1510,14 +1510,118 @@
         grid-template-columns: minmax(0, 1fr)
       }
     }
+
+    /* Layered blush atmosphere; keep the original pink as the base color. */
+    body {
+      background: var(--page-background);
+    }
+
+    body::before {
+      display: block;
+      opacity: 1;
+      animation: none;
+      background:
+        radial-gradient(ellipse at 0% 15%, #f7aac64a, transparent 44%),
+        radial-gradient(ellipse at 100% 65%, #ef91b438, transparent 42%),
+        radial-gradient(circle at 45% 40%, #ffffff85, transparent 48%);
+    }
+
+    main, .section, .skills, .skills>.container, .site-footer {
+      background: transparent;
+    }
+
+    .site-header {
+      background: #fff0f6d9;
+      backdrop-filter: blur(18px);
+    }
+
+    .hero {
+      isolation: isolate;
+      background:
+        radial-gradient(ellipse at 12% 28%, #f6a4c25c, transparent 36%),
+        radial-gradient(ellipse at 88% 62%, #f7aec85c, transparent 36%),
+        radial-gradient(ellipse at 50% 38%, #fff8fb, transparent 62%);
+    }
+
+    .hero.hero-ggb::before {
+      display: block;
+      opacity: .42;
+      filter: none;
+      transform: none;
+      pointer-events: none;
+      background: radial-gradient(circle, #d56c9238 .8px, transparent 1px) 0 0 / 23px 23px;
+      mask-image: linear-gradient(to right, #000, transparent 38%, transparent 62%, #000);
+    }
+
+    .hero-art {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      color: #dc7198;
+      overflow: hidden;
+      mask-image: linear-gradient(to bottom, #000 75%, transparent);
+    }
+
+    .hero-art .orbit {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1;
+      opacity: .23;
+    }
+
+    .hero-art .star { fill: currentColor; opacity: .5; }
+    .hero-art .pearl { fill: #fff8fb; stroke: #e798b5; stroke-width: 1; }
+
+    .panel {
+      background: linear-gradient(125deg, #fff9fcbf, #fff0f6cc);
+      border-color: #efbfd280;
+      box-shadow: 0 18px 55px #b9427410, inset 0 1px 0 #ffffffb3;
+    }
+
+    @media(max-width:700px) {
+      .hero-art { opacity: .65; }
+      .hero.hero-ggb::before { opacity: .25; }
+    }
+
+    .featured-portrait {
+      width: calc(100% - 48px);
+      max-width: var(--container);
+      margin: 24px auto 12px;
+      padding: 8px;
+      border: 1px solid #efbfd2;
+      border-radius: 26px;
+      background: #fff8fbbf;
+      box-shadow: 0 20px 55px #b942741a;
+    }
+
+    .featured-portrait img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+    }
+
+    @media(max-width:700px) {
+      .featured-portrait {
+        width: calc(100% - 32px);
+        padding: 5px;
+        border-radius: 17px;
+      }
+      .featured-portrait img { border-radius: 12px; }
+    }
   </style>
+  <link rel="stylesheet" href="assets/css/portfolio-polish.css" />
 </head>
 
 <body data-theme="light">
+  <a class="skip-link" href="#about">Skip to content</a>
   <!-- ================= NAVBAR ================= -->
   <header class="site-header">
     <div class="nav-container">
-      <div class="nav-brand">GN</div>
+      <a class="nav-brand" href="#welcome-hero" aria-label="Gouthami Nadupuri home">GN<span aria-hidden="true">.</span></a>
 
       <div class="nav-right">
         <button class="mobile-menu-toggle" type="button" aria-expanded="false"
@@ -1540,45 +1644,51 @@
   <main>
     <!-- ================= HERO ================= -->
     <section id="welcome-hero" class="hero hero-ggb">
-      <div class="hero-overlay"></div>
+      <svg class="hero-art" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <g class="orbit">
+          <ellipse cx="75" cy="270" rx="230" ry="310" transform="rotate(-32 75 270)" />
+          <ellipse cx="75" cy="270" rx="255" ry="335" transform="rotate(-32 75 270)" />
+          <ellipse cx="1370" cy="235" rx="240" ry="310" transform="rotate(35 1370 235)" />
+          <ellipse cx="1370" cy="235" rx="265" ry="335" transform="rotate(35 1370 235)" />
+          <path d="M-80 420 Q180 220 360 475 M1090 35 Q1240 270 1520 115" />
+        </g>
+        <g class="star">
+          <path d="M237 111 Q239 126 254 128 Q239 130 237 145 Q235 130 220 128 Q235 126 237 111Z" />
+          <path d="M1215 334 Q1218 354 1238 357 Q1218 360 1215 380 Q1212 360 1192 357 Q1212 354 1215 334Z" />
+          <path d="M1295 93 Q1297 103 1307 105 Q1297 107 1295 117 Q1293 107 1283 105 Q1293 103 1295 93Z" />
+          <circle cx="165" cy="335" r="3" />
+          <circle cx="1138" cy="163" r="2.5" />
+        </g>
+        <circle class="pearl" cx="294" cy="348" r="6" />
+        <circle class="pearl" cx="1240" cy="186" r="8" />
+      </svg>
 
       <div class="hero-inner">
-        <p class="hero-eyebrow">Hi, WELCOME TO MY DIGITAL UNIVERSE</p>
-        <h1 class="hero-title">Gouthami Nadupuri</h1>
-        <p class="hero-subtitle">Data &amp; AI Engineer · Data Platforms · Applied AI</p>
-
+        <p class="hero-eyebrow"><span aria-hidden="true">✦</span> ENGINEER. BUILDER. LIFELONG LEARNER.</p>
+        <h1 class="hero-title">Gouthami <em>Nadupuri.</em></h1>
+        <p class="hero-role">Data &amp; AI Engineer <span> / </span> GDG Organizer</p>
+        <p class="hero-description">Turning complex data into <strong>meaningful impact.</strong><br>Building thoughtful data platforms, intelligent applications, and connections that matter.</p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">
-            <i class="fa-solid fa-briefcase"></i>
-            View My Work
-          </a>
-
-          <a href="#contact" class="btn btn-outline">
-            <i class="fa-regular fa-envelope"></i>
-            Contact Me
-          </a>
-
-          <a href="assets/download/Gouthami_Nadupuri_Resume_2026.pdf" target="_blank" rel="noopener"
-            class="btn btn-primary">
-            <i class="fa-regular fa-file-lines"></i>
-            Resume
-          </a>
-        </div>
-
-        <div class="hero-scroll">
-          <p class="hero-scroll-text">SCROLL</p>
-          <a href="#about" aria-label="Scroll" class="hero-scroll-btn">
-            <i class="fa-solid fa-chevron-down"></i>
-          </a>
+          <a href="#projects" class="btn btn-primary">Explore my work <span aria-hidden="true">↗</span></a>
+          <a href="#contact" class="btn btn-outline">Let’s connect <span aria-hidden="true">↗</span></a>
+          <a href="assets/download/Gouthami_Nadupuri_Resume_2026.pdf" target="_blank" rel="noopener" class="resume-link">Resume <span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </section>
+    <figure class="featured-portrait">
+      <div class="cover-label"><span>MY WORLD, AT A GLANCE</span><span>DATA · AI · COMMUNITY</span></div>
+      <img src="assets/images/about/Gouthami-SF.jpg" width="2056" height="765"
+        alt="Gouthami at a laptop with San Francisco illustrations and her interests in cloud computing, data engineering, AI, and developer community."
+        fetchpriority="high" decoding="async" />
+      <figcaption><span>Curiosity meets possibility.</span><a href="#community">Building with community <span aria-hidden="true">↗</span></a></figcaption>
+    </figure>
+    <div class="expertise-strip" aria-label="Core technologies"><span>THE TOOLS BEHIND THE IDEAS</span><div>Python <b>✦</b> SQL <b>✦</b> Snowflake <b>✦</b> ClickHouse <b>✦</b> Google Cloud <b>✦</b> Applied AI</div></div>
 
     <!-- ================= ABOUT ================= -->
     <section id="about" class="section">
       <div class="panel">
         <header class="panel-header text-center">
-          <h2>Who I Am</h2>
+          <p class="section-kicker">01 / THE PERSON BEHIND THE WORK</p><h2>A little about me.</h2>
         </header>
 
         <div class="about-grid">
@@ -1623,7 +1733,7 @@
     <section id="education" class="section">
       <div class="panel">
         <header class="panel-header text-center">
-          <h2>Education</h2>
+          <p class="section-kicker">02 / FOUNDATIONS</p><h2>Education</h2>
         </header>
 
         <!-- ✅ side-by-side -->
@@ -1670,7 +1780,7 @@
     <section id="experience" class="section">
       <div class="panel">
         <header class="panel-header text-center">
-          <h2>Experience</h2>
+          <p class="section-kicker">03 / MY JOURNEY</p><h2>Experience</h2>
         </header>
 
         <div class="timeline">
@@ -1799,7 +1909,7 @@
     <section id="projects" class="section">
       <div class="panel">
         <header class="panel-header text-center">
-          <h2>Projects</h2>
+          <p class="section-kicker">04 / IDEAS INTO ACTION</p><h2>Selected work.</h2>
           <p class="panel-subtitle">Data engineering, applied AI, and full stack products.</p>
         </header>
 
@@ -1842,7 +1952,7 @@
             </article>
 
             <article class="project-card">
-              <img src="assets/images/projects/AgentEval.jpg" alt="Time Series" class="project-image" />
+              <div class="project-image project-placeholder agent-art" role="img" aria-label="AgentEval: AI agent evaluation"><span aria-hidden="true">{ ✓ }</span><small>AGENT EVALUATION</small></div>
               <div class="project-body">
                 <h3>AgentEval</h3>
                 <p class="project-desc">Developed evaluation workflows to assess agent behavior, response quality, and
@@ -1854,7 +1964,7 @@
             </article>
 
             <article class="project-card">
-              <img src="assets/images/projects/tim.jpg" alt="Time Series" class="project-image" />
+              <img src="assets/images/projects/tim.jpg" alt="Time Series" class="project-image" loading="lazy" />
               <div class="project-body">
                 <h3>Time Series Forecasting</h3>
                 <p class="project-desc">
@@ -1894,7 +2004,7 @@
             </article>
 
             <article class="project-card">
-              <img src="assets/images/projects/cyber-sentinal.png" alt="CyberAI Sentinel" class="project-image" />
+              <img src="assets/images/projects/cyber-sentinal.png" alt="CyberAI Sentinel" class="project-image" loading="lazy" />
               <div class="project-body">
                 <h3>CyberAI Sentinel – ML + RAG Cyber Analytics</h3>
                 <p class="project-desc">
@@ -1912,7 +2022,7 @@
             </article>
 
             <article class="project-card">
-              <img src="assets/images/projects/stocks.jpg" alt="Stock Market LLM" class="project-image" />
+              <img src="assets/images/projects/stocks.jpg" alt="Stock Market LLM" class="project-image" loading="lazy" />
               <div class="project-body">
                 <h3>Stock Market LLM Assistant</h3>
                 <p class="project-desc">
@@ -1928,7 +2038,7 @@
 
             <article class="project-card">
               <img src="assets/images/projects/cart-pole.png" alt="Deep Q-Learning Agent for CartPole"
-                class="project-image" />
+                class="project-image" loading="lazy" />
               <div class="project-body">
                 <h3>Deep Q-Learning Agent for CartPole</h3>
                 <p class="project-desc">Reinforcement learning DQN agent with training workflow.</p>
@@ -1968,7 +2078,7 @@
           <div class="projects-grid">
             <article class="project-card">
               <!-- ✅ Add this image in assets/images/projects/govisha.png (or update path) -->
-              <img src="assets/images/projects/GOVISHA.jpg" alt="Govisha" class="project-image" />
+              <img src="assets/images/projects/GOVISHA.jpg" alt="Govisha" class="project-image" loading="lazy" />
               <div class="project-body">
                 <h3>Govisha Studio</h3>
                 <p class="project-desc">
@@ -1983,7 +2093,7 @@
 
             <article class="project-card">
               <!-- ✅ Add this image in assets/images/projects/curiogalaxy.png (or update path) -->
-              <img src="assets/images/projects/CURIOGALAXY.jpg" alt="CurioGalaxy" class="project-image" />
+              <img src="assets/images/projects/CURIOGALAXY.jpg" alt="CurioGalaxy" class="project-image" loading="lazy" />
               <div class="project-body">
                 <h3>CurioGalaxy</h3>
                 <p class="project-desc">
@@ -2021,7 +2131,7 @@
     <section id="courses" class="section">
       <div class="panel">
         <header class="panel-header text-center">
-          <h2>Courses & Certifications</h2>
+          <p class="section-kicker">05 / ALWAYS LEARNING</p><h2>Courses & Certifications</h2>
           <p class="panel-subtitle">
             Snowflake · ClickHouse · Google Cloud · RAG &amp; Agentic AI
           </p>
@@ -2110,7 +2220,7 @@
               height="72" />
             <div>
               <p class="community-kicker">GOOGLE DEVELOPER GROUPS</p>
-              <h2 id="community-title">Learn. Build. Grow.</h2>
+              <h2 id="community-title">Better together.</h2>
             </div>
           </div>
           <p class="community-intro">Technology brings us together.<br>Community helps us grow.</p>
@@ -2216,7 +2326,7 @@
     <section id="contact" class="section">
       <div class="panel panel-cta">
         <header class="panel-header text-center">
-          <h2>Get in Touch</h2>
+          <p class="section-kicker">LET’S BUILD SOMETHING MEANINGFUL</p><h2>Have an idea? Let’s talk.</h2>
           <p class="panel-subtitle">
             Open to roles and collaborations in data engineering, data platforms, analytics, and applied AI.
           </p>
@@ -2317,6 +2427,9 @@
 
 
   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
 </body>
 
 </html>
