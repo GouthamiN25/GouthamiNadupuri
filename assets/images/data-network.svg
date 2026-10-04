@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+<defs>
+ <linearGradient id="ink" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#ce5088"/><stop offset=".5" stop-color="#bd6ca5"/><stop offset="1" stop-color="#936bb1"/></linearGradient>
+ <pattern id="dots" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#bc6795" opacity=".14"/></pattern>
+</defs>
+<path d="M0 0h1600v1000H0z" fill="url(#dots)"/>
+<!-- Neural-network layers, kept in the left margin. -->
+<g stroke="url(#ink)" stroke-width="1.25">
+<path d="M22 130L100 95" opacity=".17"/>
+<path d="M22 130L100 170" opacity=".17"/>
+<path d="M22 130L100 245" opacity=".17"/>
+<path d="M22 130L100 320" opacity=".17"/>
+<path d="M22 210L100 95" opacity=".17"/>
+<path d="M22 210L100 170" opacity=".17"/>
+<path d="M22 210L100 245" opacity=".17"/>
+<path d="M22 210L100 320" opacity=".17"/>
+<path d="M22 290L100 95" opacity=".17"/>
+<path d="M22 290L100 170" opacity=".17"/>
+<path d="M22 290L100 245" opacity=".17"/>
+<path d="M22 290L100 320" opacity=".17"/>
+<path d="M100 95L182 135" opacity=".17"/>
+<path d="M100 95L182 210" opacity=".17"/>
+<path d="M100 95L182 285" opacity=".17"/>
+<path d="M100 170L182 135" opacity=".17"/>
+<path d="M100 170L182 210" opacity=".17"/>
+<path d="M100 170L182 285" opacity=".17"/>
+<path d="M100 245L182 135" opacity=".17"/>
+<path d="M100 245L182 210" opacity=".17"/>
+<path d="M100 245L182 285" opacity=".17"/>
+<path d="M100 320L182 135" opacity=".17"/>
+<path d="M100 320L182 210" opacity=".17"/>
+<path d="M100 320L182 285" opacity=".17"/>
+<path d="M182 135L256 210" opacity=".17"/>
+<path d="M182 210L256 210" opacity=".17"/>
+<path d="M182 285L256 210" opacity=".17"/>
+<circle cx="22" cy="130" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="22" cy="130" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="22" cy="210" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="22" cy="210" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="22" cy="290" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="22" cy="290" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="100" cy="95" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="100" cy="95" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="100" cy="170" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="100" cy="170" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="100" cy="245" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="100" cy="245" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="100" cy="320" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="100" cy="320" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="182" cy="135" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="182" cy="135" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="182" cy="210" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="182" cy="210" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="182" cy="285" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="182" cy="285" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+<circle cx="256" cy="210" r="8" fill="#fff0f6" stroke-opacity=".43"/><circle cx="256" cy="210" r="2.4" fill="#c65f98" stroke="none" opacity=".5"/>
+</g>
+<!-- Processor with circuit traces. -->
+<g transform="translate(1390 155) rotate(12)" stroke="url(#ink)" stroke-width="1.5" stroke-opacity=".32">
+ <rect x="-51" y="-51" width="102" height="102" rx="15"/><rect x="-36" y="-36" width="72" height="72" rx="9"/>
+ <path d="M-18 19L-4-19 10 19M-13 5H5M18-19V19" stroke-width="2"/>
+ <path d="M-30-51V-79H-75V-112M-10-51V-102M10-51V-79H63V-102M30-51V-65H110M51-30H85V-80M51-10H120M51 10H95V83M51 30H70V110M30 51V83H-3V122M10 51V66M-10 51V98H-70M-30 51V72H-105M-51 30H-80V53M-51 10H-115M-51-10H-75V-32M-51-30H-97V-68"/>
+ <g fill="#fff0f6"><circle cx="-75" cy="-112" r="4"/><circle cx="120" cy="-10" r="4"/><circle cx="70" cy="110" r="4"/><circle cx="-115" cy="10" r="4"/><circle cx="-70" cy="98" r="4"/></g>
+</g>
+<!-- Data-pipeline diagram. -->
+<g transform="translate(25 490)" stroke="url(#ink)" stroke-width="1.4" stroke-opacity=".28">
+ <ellipse cx="54" cy="0" rx="34" ry="12"/><path d="M20 0v62c0 16 68 16 68 0V0M20 20c0 16 68 16 68 0M20 40c0 16 68 16 68 0"/>
+ <path d="M54 78v40h82v44m-5-6 5 6 5-6" stroke-dasharray="4 6"/>
+ <rect x="108" y="171" width="58" height="50" rx="9"/><path d="m128 187-9 9 9 9m17-18 9 9-9 9m-11 0 6-18"/>
+ <path d="M137 230v45H65v49m-5-6 5 6 5-6" stroke-dasharray="4 6"/>
+ <path d="M30 390v-46m0 46h84M47 379v-16m19 16v-34m19 34v-24m19 24v-51" stroke-linecap="round"/>
+</g>
+<!-- Learned feature space: rings, points, and a fitted curve. -->
+<g transform="translate(1450 665)" stroke="url(#ink)" stroke-opacity=".23">
+ <ellipse rx="125" ry="57" transform="rotate(-30)"/><ellipse rx="125" ry="57" transform="rotate(30)"/><ellipse rx="125" ry="57" transform="rotate(90)"/>
+ <circle r="9" fill="#cf7ca4" fill-opacity=".18"/>
+ <circle cx="-99" cy="-63" r="5" fill="#fff0f6"/><circle cx="104" cy="-58" r="5" fill="#fff0f6"/><circle cx="0" cy="125" r="5" fill="#fff0f6"/>
+</g>
+<g stroke="url(#ink)" stroke-opacity=".2" stroke-width="1.2">
+ <path d="M1320 910H1550M1340 935V820M1353 896C1387 894 1380 860 1420 867S1490 805 1530 825"/>
+ <path d="M305 58H490l25 25h90M1040 57h140l24 24h85M350 926h190l24-24h95" stroke-dasharray="3 7"/>
+</g>
+<g fill="#bd6b9b" opacity=".3"><circle cx="1360" cy="880" r="3"/><circle cx="1390" cy="883" r="3"/><circle cx="1412" cy="853" r="3"/><circle cx="1451" cy="860" r="3"/><circle cx="1482" cy="837" r="3"/><circle cx="1513" cy="815" r="3"/></g>
+</svg>
